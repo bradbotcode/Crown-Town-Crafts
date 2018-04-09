@@ -11,16 +11,18 @@ var PORT = process.env.PORT || 8080;
 // Requiring our models for syncing
 var db = require("./models");
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 app.use(bodyParser.json());
 
 // Routes
 // =============================================================
-var router = require("./controllers/ctc_controllers.js");
-app.use("/", router);
-
 // Static directory
-app.use(express.static("public"));
+app.use(express.static("./public"));
+
+var html = require('./routing/html-routes.js')(app);
+var api = require('./routing/api-routes.js')(app);
 
 //handlebars engine
 app.engine(
@@ -33,8 +35,10 @@ app.set("view engine", "handlebars");
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
-db.sequelize.sync({ force: true }).then(function() {
-  app.listen(PORT, function() {
+db.sequelize.sync({
+  force: true
+}).then(function () {
+  app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
   });
 });

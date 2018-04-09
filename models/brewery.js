@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     year_est: {
-      type: DataTypes.INTERGER,
+      type: DataTypes.INTEGER,
       $lte: 9999,
       allowNull: false
     },
@@ -24,7 +24,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     zip: {
-      type: DataTypes.INTERGER
+      type: DataTypes.INTEGER
     }
   });
 

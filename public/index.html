@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crown Town Crafts</title>
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <div id="overlay">
+        <header role="banner">
+            <div id="cd-logo">
+                <a href="#0">
+                    <img src="http://via.placeholder.com/100x150" alt="Logo">
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <!-- inser more links here -->
+                    <li>
+                        <a class="cd-signin" href="#0">Sign in</a>
+                    </li>
+                    <li>
+                        <a class="cd-signup" href="#0">Sign up</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Find your local craft beer</h1>
+        <!-- <h3>Search By:</h3> -->
+        <div class="indexForm">
+
+            <select class="typeSelect indexSelects" id="type">
+                <option value="1" disabled selected>Beer Type</option>
+                <option value="amber">Amber</option>
+                <option value="pale">Pale</option>
+
+            </select>
+            <select class="neighborhoodSelect indexSelects" id="neighborhood">
+                <option value="2" disabled selected>Neighborhood</option>
+            </select>
+            <select class="brewerySelect indexSelects" id="brewery">
+                <option value="" disabled selected>Brewery</option>
+            </select>
+
+            <button class="search indexSubmit" onclick="getVals()">
+                Search
+            </button>
+        </div>
+        <video class="visible-desktop" id="hero-vid" poster="assets/BeerPour.png" autoplay loop muted>
+            <!-- <source type="video/mp4" src="BeerPour.mp4"></source> -->
+            <source type="video/mp4" src="https://ia802505.us.archive.org/1/items/Beer_Pour/Beer%20Pour%20H264.mp4"></source>
+        </video>
+        <div id="state" class="visible-desktop">
+            <span class="fa fa-pause"></span>
+        </div>
+        <img id="hero-pic" class="hidden-desktop" src="assets/BeerPour.png" alt="">
+    </div>
+
+    <div id="content">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non ipsum tincidunt, consequat felis eu, venenatis arcu.
+            Quisque volutpat imperdiet ex commodo ultricies. Quisque ultricies quam ultrices pretium laoreet. Nullam faucibus
+            ultrices purus non iaculis. Mauris iaculis, neque a mollis interdum, ligula orci blandit lectus, ac eleifend
+            magna lectus eget lacus. Duis placerat tellus sit amet enim hendrerit laoreet. Praesent faucibus egestas nisl,
+            et efficitur arcu venenatis vitae. Mauris eu lorem vitae risus fringilla viverra. Vestibulum a dignissim augue,
+            non rhoncus lectus.
+
+        </p>
+
+        <p>
+            Aliquam semper libero dolor, sed ullamcorper sem cursus quis. Pellentesque luctus est sit amet quam varius, sed egestas lacus
+            varius. Proin tempus venenatis ultrices. Fusce mattis, justo ut consectetur viverra, diam turpis malesuada massa,
+            sed pharetra leo enim at nisi. Nam vel sapien eu libero accumsan molestie quis eu lorem. Vestibulum sodales lobortis
+            tempus. Cras tristique nibh tellus, sed placerat est blandit imperdiet. Maecenas rutrum leo at nulla facilisis
+            fringilla. Maecenas eu nulla vitae felis lacinia pellentesque. Curabitur congue purus non volutpat elementum.
+            Duis eu metus luctus, porta velit pulvinar, bibendum nisi. In erat ex, faucibus et mauris sit amet, consectetur
+            lacinia quam.
+
+        </p>
+        <p>
+            Nulla molestie, diam eu molestie ultricies, ligula magna bibendum nisi, sit amet dapibus nisl massa at nisi. Morbi vitae
+            elit tristique, molestie ante non, sodales neque. Proin non ipsum mauris. Phasellus tincidunt faucibus urna nec
+            gravida. Integer sit amet ullamcorper nibh, sit amet commodo eros. Pellentesque habitant morbi tristique senectus
+            et netus et malesuada fames ac turpis egestas. Fusce quis commodo diam. Quisque eu tortor a tortor tincidunt
+            varius ac eget lacus. Maecenas faucibus odio urna, nec semper elit auctor id. Nunc at commodo eros, sed porta
+            massa. Mauris at ultrices purus.
+
+        </p>
+        <p>
+            Vestibulum nec massa sit amet lorem pulvinar venenatis quis quis lectus. Etiam dictum ultrices tellus sit amet volutpat.
+            Suspendisse eget mollis ex. Phasellus at efficitur leo, sed faucibus tellus. Pellentesque ultricies arcu in dapibus
+            auctor. Proin eget sem mattis, tincidunt urna vitae, dignissim magna. Vestibulum ante ipsum primis in faucibus
+            orci luctus et ultrices posuere cubilia Curae; Duis quis sapien finibus, auctor ante sit amet, euismod quam.
+            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quis quam id purus
+            imperdiet viverra. Duis eu sapien tincidunt, tincidunt dui sed, rutrum sapien. Donec ut efficitur lacus, tincidunt
+            fringilla turpis. Vestibulum congue elit ex, quis luctus magna semper id.
+
+        </p>
+        <p>
+            Cras vestibulum volutpat mattis. Mauris consectetur non nunc vitae molestie. Etiam ac placerat justo. Cras turpis urna, lacinia
+            vitae pulvinar eu, lobortis ac eros. Cras bibendum tincidunt odio, nec luctus sem dictum et. Integer mi risus,
+            suscipit sed luctus vel, gravida scelerisque mauris. In hac habitasse platea dictumst. Nullam varius rutrum nisi
+            vitae volutpat. Suspendisse potenti. Nulla non blandit dui. Duis non sollicitudin leo. Nulla aliquam ullamcorper
+            condimentum. Curabitur lacinia, tellus vel tincidunt dictum, justo dolor imperdiet orci, et facilisis arcu metus
+            ut est. Aenean id est in justo vestibulum accumsan.
+
+        </p>
+    </div>
+    <div class="cd-user-modal">
+        <!-- this is the entire modal form, including the background -->
+        <div class="cd-user-modal-container">
+            <!-- this is the container wrapper -->
+            <ul class="cd-switcher">
+                <li>
+                    <a href="#0">Sign in</a>
+                </li>
+                <li>
+                    <a href="#0">New account</a>
+                </li>
+            </ul>
+
+            <div id="cd-login">
+                <!-- log in form -->
+                <form class="cd-form">
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="signin-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-password" for="signin-password">Password</label>
+                        <input class="full-width has-padding has-border" id="signin-password" type="text" placeholder="Password">
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <input class="full-width" type="submit" value="Login">
+                    </p>
+                </form>
+                <!-- <a href="#0" class="cd-close-form">Close</a> -->
+            </div>
+            <!-- cd-login -->
+
+            <div id="cd-signup">
+                <!-- sign up form -->
+                <form class="cd-form">
+                    <p class="fieldset">
+                        <label class="image-replace cd-username" for="signUpUsername">Username</label>
+                        <input class="full-width has-padding has-border" id="signUpUsername" type="text" placeholder="Username">
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="signUpEmail">E-mail</label>
+                        <input class="full-width has-padding has-border" id="signUpEmail" type="email" placeholder="E-mail">
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-password" for="signUpPassword">Password</label>
+                        <input class="full-width has-padding has-border" id="signUpPassword" type="text" placeholder="Password">
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <input class="full-width has-padding signUp" type="submit" value="Create account">
+                    </p>
+                </form>
+
+                <!-- <a href="#0" class="cd-close-form">Close</a> -->
+            </div>
+            <!-- cd-signup -->
+            <a href="#0" class="cd-close-form">Close</a>
+        </div>
+        <!-- cd-user-modal-container -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="assets/logic.js"></script>
+    <script src="../auth.js"></script>    
+    <script>
+        //for length of Brewery List add option (alphabetical?)
+        function getVals() {
+            var typeSelect = document.getElementById('type');
+            var neighborhoodSelect = document.getElementById('neighborhood');
+            var brewerySelect = document.getElementById('brewery');
+            console.log(typeSelect.value);
+            console.log(neighborhoodSelect.value);
+            console.log(brewerySelect.value);
+        }
+
+    </script>
+</body>
+
+</html>

@@ -16,13 +16,13 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
-// Routes
-// =============================================================
-// Static directory
+// static directory
 app.use(express.static("./public"));
 
-require('./routing/html-routes.js')(app);
+// require routes
 require('./routing/api-routes.js')(app);
+require('./routing/html-routes.js')(app);
+
 
 //handlebars engine
 app.engine(

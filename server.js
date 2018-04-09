@@ -21,8 +21,8 @@ app.use(bodyParser.json());
 // Static directory
 app.use(express.static("./public"));
 
-var html = require('./routing/html-routes.js')(app);
-var api = require('./routing/api-routes.js')(app);
+require('./routing/html-routes.js')(app);
+require('./routing/api-routes.js')(app);
 
 //handlebars engine
 app.engine(

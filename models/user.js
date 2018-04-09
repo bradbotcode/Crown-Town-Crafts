@@ -9,13 +9,14 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: false
         },
         total_cheers: {
-            type: DataTypes.INTERGER,
+            type: DataTypes.INTEGER,
             defaultValue: 0,
             allowNull: false
         },
         total_reviews: {
-            type: DataTypes.INTERGER
+            type: DataTypes.INTEGER
         }
     });
+    
     return User;
 }

@@ -9,20 +9,20 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     ibu: {
-      type: DataTypes.INTERGER,
+      type: DataTypes.INTEGER,
       allowNull: false
     },
     style: {
-      type: datatypes.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     cheers: {
-      type: datatypes.INTERGER,
+      type: DataTypes.INTEGER,
       defaultValue: 0,
       allowNull: false
     },
     rating: {
-      type: datatypes.INTERGER
+      type: DataTypes.INTEGER
     }
   });
 

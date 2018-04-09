@@ -25,6 +25,7 @@ module.exports = function(sequelize, DataTypes) {
       type: datatypes.INTERGER
     }
   });
+
   Beer.associate = function(models) {
     Beer.belongsTo(models.Brewery, {
       foreignKey: {

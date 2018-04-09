@@ -1,6 +1,7 @@
 // Dependencies
 var express = require("express");
 var bodyParser = require("body-parser");
+var exphbs = require("express-handlebars");
 
 // Sets up the Express App
 // =============================================================
@@ -11,7 +12,6 @@ var PORT = process.env.PORT || 8080;
 var db = require("./models");
 
 app.use(bodyParser.urlencoded({ extended: true }));
-
 app.use(bodyParser.json());
 
 // Static directory
@@ -21,6 +21,15 @@ app.use(express.static("public"));
 // =============================================================
 require("./routes/brewery-api.js")(app);
 require("./routes/beer-api.js")(app);
+
+//handlebars engine
+app.engine(
+  "handlebars",
+  exphbs({
+    defaultLayout: "main"
+  })
+);
+app.set("view engine", "handlebars");
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================

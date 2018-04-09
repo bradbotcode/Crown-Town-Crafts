@@ -7,6 +7,7 @@ var config = {
   storageBucket: "brewery-app-306b6.appspot.com",
   messagingSenderId: "1082909881233"
 };
+
 firebase.initializeApp(config);
 var database = firebase.database();
 var user = null;
@@ -16,6 +17,8 @@ firebase.auth().onAuthStateChanged(function(firebUser) {
 
   if (user) {
     //show or hide what you want
+    //ajax.post to api/newUser/:uid
+    //from there on server side, api/newUser/:uid will look into db table for users, check for that UID. If its there, do nothing with post. it it isn't add them as new user.
   } else {
     //show or hide what you want
   }

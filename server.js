@@ -19,8 +19,9 @@ app.use(express.static("public"));
 
 // Routes
 // =============================================================
-require("./routes/brewery-api.js")(app);
-require("./routes/beer-api.js")(app);
+var router = require("./controllers/ctc_controllers.js");
+
+app.use("/", router);
 
 //handlebars engine
 app.engine(

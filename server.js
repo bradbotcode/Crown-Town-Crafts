@@ -14,14 +14,13 @@ var db = require("./models");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// Static directory
-app.use(express.static("public"));
-
 // Routes
 // =============================================================
 var router = require("./controllers/ctc_controllers.js");
-
 app.use("/", router);
+
+// Static directory
+app.use(express.static("public"));
 
 //handlebars engine
 app.engine(

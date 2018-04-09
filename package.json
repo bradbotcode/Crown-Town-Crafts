@@ -1,0 +1,27 @@
+{
+  "name": "crown-town-crafts",
+  "version": "1.0.0",
+  "description": "Local beer app",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mysql2": "^1.5.3",
+    "sequelize": "^4.37.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradbotcode/Crown-Town-Crafts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bradbotcode/Crown-Town-Crafts/issues"
+  },
+  "homepage": "https://github.com/bradbotcode/Crown-Town-Crafts#readme"
+}

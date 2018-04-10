@@ -9,7 +9,6 @@ var config = {
 };
 
 firebase.initializeApp(config);
-var database = firebase.database();
 var user = null;
 firebase.auth().onAuthStateChanged(function(firebUser) {
   console.log("authstatechanged");
@@ -46,12 +45,6 @@ $(".signUp").click(function(event) {
     .createUserWithEmailAndPassword(email, password)
     .then(function(user) {
       var uid = user.uid;
-
-      firebase
-        .database()
-        .ref("/" + uid)
-        .set(userInfo);
-      console.log(userInfo);
     })
     .catch(function(error) {
       // Handle Errors here.

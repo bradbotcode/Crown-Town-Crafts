@@ -11,7 +11,6 @@ var config = {
 firebase.initializeApp(config);
 var database = firebase.database();
 var user = null;
-var uid = user.uid;
 firebase.auth().onAuthStateChanged(function(firebUser) {
   console.log("authstatechanged");
   user = firebUser;
@@ -20,7 +19,7 @@ firebase.auth().onAuthStateChanged(function(firebUser) {
     //show or hide what you want
     //ajax.post to api/newUser/:uid
     //from there on server side, api/newUser/:uid will look into db table for users, check for that UID. If its there, do nothing with post. it it isn't add them as new user.
-    $.post("/api/newUser/" + uid, function(data) {
+    $.post("/api/newUser/" + user.uid, function(data) {
       console.log("created new user" + data);
     });
   } else {

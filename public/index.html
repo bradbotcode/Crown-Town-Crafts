@@ -15,7 +15,7 @@
     <div id="overlay">
         <header role="banner">
             <div id="cd-logo">
-                <a href="#0">
+                <a href="index.html">
                     <img src="http://via.placeholder.com/100x150" alt="Logo">
                 </a>
             </div>
@@ -40,7 +40,6 @@
                 <option value="1" disabled selected>Beer Type</option>
                 <option value="amber">Amber</option>
                 <option value="pale">Pale</option>
-
             </select>
             <select class="neighborhoodSelect indexSelects" id="neighborhood">
                 <option value="2" disabled selected>Neighborhood</option>
@@ -52,6 +51,8 @@
             <button class="search indexSubmit" onclick="getVals()">
                 Search
             </button>
+            <br>
+            <br>
         </div>
         <video class="visible-desktop" id="hero-vid" poster="assets/BeerPour.png" autoplay loop muted>
             <!-- <source type="video/mp4" src="BeerPour.mp4"></source> -->
@@ -152,11 +153,6 @@
             <div id="cd-signup">
                 <!-- sign up form -->
                 <form class="cd-form">
-                    <p class="fieldset">
-                        <label class="image-replace cd-username" for="signUpUsername">Username</label>
-                        <input class="full-width has-padding has-border" id="signUpUsername" type="text" placeholder="Username">
-                        <span class="cd-error-message">Error message here!</span>
-                    </p>
 
                     <p class="fieldset">
                         <label class="image-replace cd-email" for="signUpEmail">E-mail</label>

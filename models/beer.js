@@ -15,10 +15,6 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false
     },
-    brewery_id: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
     cheers: {
       type: DataTypes.STRING,
       defaultValue: 0
@@ -26,11 +22,18 @@ module.exports = function (sequelize, DataTypes) {
     rating: {
       type: DataTypes.STRING,
       defaultValue: null
-    },
-  },{
-      timestamps: false
-  });
-
+    }
+    }, {
+        timestamps: false
+    });
+    
+    Beer.associate = function (models) {
+        Beer.belongsTo(models.Brewery, {
+          foreignKey: {
+            allowNull: false
+          }
+        });
+      };
 
   return Beer;
 };

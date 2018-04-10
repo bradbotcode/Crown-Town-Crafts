@@ -22,17 +22,29 @@
 
             <nav class="main-nav">
                 <ul>
-                    <!-- inser more links here -->
+                    <!-- insert more links here -->
+                    <span class="hideUser">
+                        <li>
+                            <a class="cd-signin" href="#0">Sign in</a>
+                        </li>
+                        <li>
+                            <a class="cd-signup" href="#0">Sign up</a>
+                        </li>
+                    </span>
+        <!-- Need code for hide/show
+                <span class="hideNotUser">
                     <li>
-                        <a class="cd-signin" href="#0">Sign in</a>
+                        <a class="cd-signin" href="#0">Profile</a>
                     </li>
                     <li>
-                        <a class="cd-signup" href="#0">Sign up</a>
+                        <a class="cd-signup" href="#0">Sign Out</a>
                     </li>
+                </span>
+            -->
                 </ul>
             </nav>
         </header>
-        <h1>Find your local craft beer</h1>
+        <h1>FIND YOUR LOCAL CRAFT BEER</h1>
         <!-- <h3>Search By:</h3> -->
         <div class="indexForm">
 
@@ -43,9 +55,14 @@
             </select>
             <select class="neighborhoodSelect indexSelects" id="neighborhood">
                 <option value="2" disabled selected>Neighborhood</option>
+                <option value="noda">noda</option>
+                <option value="plaza">plaza</option>
+
             </select>
             <select class="brewerySelect indexSelects" id="brewery">
                 <option value="" disabled selected>Brewery</option>
+                <option value="nodabrewing">NODA Brewing</option>
+                <option value="omb">OMB</option>
             </select>
 
             <button class="search indexSubmit" onclick="getVals()">

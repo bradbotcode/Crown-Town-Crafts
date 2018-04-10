@@ -144,4 +144,6 @@ jQuery.fn.putCursorAtEnd = function () {
             $(this).val($(this).val());
         }
     });
+    $("#signUpPassword").text("");
+    $("#signUpEmail").text("");
 };

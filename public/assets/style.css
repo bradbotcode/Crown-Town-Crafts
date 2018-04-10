@@ -32,7 +32,7 @@ h1, h3 {
 }
 
 h1 {
-    font-size:2.4rem;
+    font-size:2.2rem;
     padding:2rem 1.75rem .4rem 1.75rem;
 }
 
@@ -225,6 +225,7 @@ textarea::-ms-clear {
     margin-top: 10px;
     padding: 10px;
     font-size: 1.2rem;
+    font-weight: 600;
     border: 1px solid #984b43;
     background-color: #984b43;
     color: #373737;
@@ -240,7 +241,8 @@ textarea::-ms-clear {
     padding-left: 24px;
     direction: ltr;
     font-size: 1.2rem;
-    border: 1.5px solid #984b43;
+    font-weight: 600;
+    border: 3px solid #984b43;
     background-color: transparent;
     color: #984b43
 }
@@ -607,13 +609,13 @@ textarea::-ms-clear {
 /* Larger than desktop */
 @media (min-width: 1000px) {
     h1 {
-        font-size:4rem;
-        padding:8rem 0rem .5rem 0rem;
+        font-size:3.6rem;
+        padding:8rem 0rem 2rem 0rem;
     }
     
     h3 {
         font-size:3rem;
-        padding:.5rem 0rem 1.3rem 0rem;
+        padding:.5rem 0rem .5rem 0rem;
     }
     .indexForm {
         width: 810px;
@@ -624,9 +626,6 @@ textarea::-ms-clear {
         width: 100%;
         padding: 10px 0px;
         font-size: 1.2rem;
-        border: 1px solid #984b43;
-        background-color: #984b43;
-        color: #373737;
     }
     .indexSelects {
         display: inline;
@@ -637,9 +636,7 @@ textarea::-ms-clear {
         padding-left: 24px;
         direction: ltr;
         font-size: 1.2rem;
-        border: 1.5px solid #984b43;
         background-color: transparent;
-        color: #984b43
     }
     .indexSelects:nth-of-type(1) {
         margin-left: 0px;

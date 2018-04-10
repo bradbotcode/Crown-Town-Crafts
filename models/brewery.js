@@ -1,4 +1,4 @@
-module.exports = function(sequelize, DataTypes) {
+module.exports = function (sequelize, DataTypes) {
   var Brewery = sequelize.define("Brewery", {
     brewery_name: {
       type: DataTypes.STRING,
@@ -28,7 +28,7 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
 
-  Brewery.associate = function(models) {
+  Brewery.associate = function (models) {
     // Associating Breweries with Beers
     // If a Brewery is deleted, also delete any associated Beers
     Brewery.hasMany(models.Beer, {

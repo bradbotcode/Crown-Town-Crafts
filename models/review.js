@@ -1,4 +1,4 @@
-module.exports = function(sequelize, DataTypes) {
+module.exports = function (sequelize, DataTypes) {
     var Review = sequelize.define("Review", {
         title: {
             type: DataTypes.STRING
@@ -12,8 +12,8 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: false
         }
     });
-    Review.associate = function(models) {
-        Reivew.belongsTo(models.User, {
+    Review.associate = function (models) {
+        Review.belongsTo(models.User, {
             foreignKey: {
                 allowNull: false
             }

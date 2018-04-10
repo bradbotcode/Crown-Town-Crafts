@@ -32,7 +32,7 @@ h1, h3 {
 }
 
 h1 {
-    font-size:3rem;
+    font-size:2.4rem;
     padding:2rem 1.75rem .4rem 1.75rem;
 }
 
@@ -148,8 +148,12 @@ textarea::-ms-clear {
 
 #hero-pic {
     display:block;
-    height:auto;
+    height:100%;
     width:100%;
+    position: absolute; 
+    left: 0; 
+    top: 0;
+    z-index: -2;
 }
 
 #state {
@@ -219,11 +223,10 @@ textarea::-ms-clear {
     width: 90%;
     margin: auto;
     margin-top: 10px;
-    margin-bottom: 10px;
     padding: 10px;
     font-size: 1.2rem;
-    border: 1px solid #dcd0c0;
-    background-color: #dcd0c0;
+    border: 1px solid #984b43;
+    background-color: #984b43;
     color: #373737;
 }
 
@@ -237,9 +240,9 @@ textarea::-ms-clear {
     padding-left: 24px;
     direction: ltr;
     font-size: 1.2rem;
-    border: 1.5px solid #dcd0c0;
+    border: 1.5px solid #984b43;
     background-color: transparent;
-    color: #dcd0c0
+    color: #984b43
 }
 
 /* Modal */
@@ -604,8 +607,8 @@ textarea::-ms-clear {
 /* Larger than desktop */
 @media (min-width: 1000px) {
     h1 {
-        font-size:5rem;
-        padding:5.5rem 0rem .5rem 0rem;
+        font-size:4rem;
+        padding:8rem 0rem .5rem 0rem;
     }
     
     h3 {
@@ -621,8 +624,8 @@ textarea::-ms-clear {
         width: 100%;
         padding: 10px 0px;
         font-size: 1.2rem;
-        border: 1px solid #dcd0c0;
-        background-color: #dcd0c0;
+        border: 1px solid #984b43;
+        background-color: #984b43;
         color: #373737;
     }
     .indexSelects {
@@ -634,9 +637,9 @@ textarea::-ms-clear {
         padding-left: 24px;
         direction: ltr;
         font-size: 1.2rem;
-        border: 1.5px solid #dcd0c0;
+        border: 1.5px solid #984b43;
         background-color: transparent;
-        color: #dcd0c0
+        color: #984b43
     }
     .indexSelects:nth-of-type(1) {
         margin-left: 0px;

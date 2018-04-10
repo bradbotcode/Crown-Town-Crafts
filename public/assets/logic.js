@@ -1,3 +1,13 @@
+$(".indexSubmit").on("click", function(event){
+    event.preventDefault();
+    var categories = {
+    type: $("#type").val().trim(),
+    neighborhood: $("#neighborhood").val().trim(),
+    brewery: $("#brewery").val().trim()
+    }
+    console.log(categories);
+})
+
 jQuery(document).ready(function ($) {
     var $form_modal = $('.cd-user-modal'),
         $form_login = $form_modal.find('#cd-login'),

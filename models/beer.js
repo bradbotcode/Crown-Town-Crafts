@@ -6,29 +6,29 @@ module.exports = function (sequelize, DataTypes) {
       allowNull: false
     },
     abv: {
-      type: DataTypes.FLOAT,
-      allowNull: false
+      type: DataTypes.STRING,
     },
     ibu: {
-      type: DataTypes.INTEGER,
-      allowNull: true
+      type: DataTypes.STRING
     },
     style: {
       type: DataTypes.STRING,
       allowNull: false
     },
     brewery_id: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false
     },
     cheers: {
-      type: DataTypes.INTEGER,
-      defaultValue: 0,
-      allowNull: false
+      type: DataTypes.STRING,
+      defaultValue: 0
     },
     rating: {
-      type: DataTypes.INTEGER
-    }
+      type: DataTypes.STRING,
+      defaultValue: null
+    },
+  },{
+      timestamps: false
   });
 
 

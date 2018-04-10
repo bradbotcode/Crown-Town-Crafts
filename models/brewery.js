@@ -34,6 +34,8 @@ module.exports = function (sequelize, DataTypes) {
     zip: {
       type: DataTypes.INTEGER
     }
+  },{
+    timestamps: false
   });
 
 

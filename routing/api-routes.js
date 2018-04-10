@@ -2,6 +2,15 @@
 var db = require("../models");
 
 //routes
-module.exports = function (app) {
-
+module.exports = function(app) {
+  app.post("/api/newUser/:uid", function(req, res) {
+    db.User.findAll({
+      where: {
+        uid: req.params.uid
+      }
+    });
+    if (res === 0) {
+    } else {
+    }
+  });
 };

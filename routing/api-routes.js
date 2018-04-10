@@ -18,4 +18,23 @@ module.exports = function(app) {
       }
     });
   });
+  // Vague Search
+  app.get("/api/search/:filters", function(req, res) {
+    let paramArr = req.params.filters.split("&");
+    let type;
+    let hood;
+
+    for(let i=0; i < paramArr.length; i++) {
+      if(paramArr[i].indexOf("type=")) {
+        let typeArr = paramArr[i].split("=");
+        type = typeArr[1]
+        console.log(typeArr[1]);
+      }
+      if(paramArr[i].indexOf("hood=")) {
+        let hoodArr = paramArr[i].split("="); 
+        hood = hood[1];
+        console.log(hood);
+      }
+    }
+  });
 };

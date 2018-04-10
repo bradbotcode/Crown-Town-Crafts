@@ -8,9 +8,14 @@ module.exports = function(app) {
       where: {
         uid: req.params.uid
       }
+    }).then(function(res) {
+      if (res.length === 0) {
+        db.User.create({
+          uid: req.params.uid
+        });
+      } else {
+        //do nothing;
+      }
     });
-    if (res === 0) {
-    } else {
-    }
   });
 };

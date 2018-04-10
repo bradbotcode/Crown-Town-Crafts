@@ -1,4 +1,4 @@
-module.exports = function(sequelize, DataTypes) {
+module.exports = function (sequelize, DataTypes) {
   var Beer = sequelize.define("Beer", {
     beer_name: {
       type: DataTypes.STRING,
@@ -10,7 +10,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     ibu: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: true
     },
     style: {
       type: DataTypes.STRING,
@@ -26,7 +26,7 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
 
-  Beer.associate = function(models) {
+  Beer.associate = function (models) {
     Beer.belongsTo(models.Brewery, {
       foreignKey: {
         allowNull: false

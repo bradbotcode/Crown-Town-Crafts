@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crown Town Crafts</title>
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+
+    <header role="banner">
+        <div id="cd-logo">
+            <a href="index.html">
+                CROWN TOWN CRAFTS
+            </a>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <!-- insert more links here -->
+                <span class="hideUser">
+                    <li>
+                        <a class="cd-signin" href="#0">Sign in</a>
+                    </li>
+                    <li>
+                        <a class="cd-signup" href="#0">Sign up</a>
+                    </li>
+                </span>
+                <!-- Need code for hide/show
+                <span class="hideNotUser">
+                    <li>
+                        <a class="cd-signin" href="#0">Profile</a>
+                    </li>
+                    <li>
+                        <a class="cd-signup" href="#0">Sign Out</a>
+                    </li>
+                </span>
+            -->
+            </ul>
+        </nav>
+    </header>
+    <div id="content" class="wrapper">
+        <div class="full brewHead">
+            <h4>Add a Beer</h4>
+            <form action="" class="adminForm">
+                <label for="beer_name">Beer Name</label>
+                <input type="text" name="beer_name" id="">
+                <label for="abv">Alcohol By Volume</label>
+                <input type="text" name="abv" id="">
+                <label for="ibu">International Bitterness Units</label>
+                <input type="text" name="ibu" id="">
+                <label for="style">Specific Beer Style</label>
+                <input type="text" name="style" id="">
+                <select id="simpleStyle">
+                    <option value="" disabled selected>Beer Simplified Type</option>
+                    <option value="Amber/Red Ale">Amber/Red Ale</option>
+                    <option value="Blonde/Golden Ale">Blonde/Golden Ale</option>
+                    <option value="Bock">Bock</option>
+                    <option value="Brown Ale">Brown Ale</option>
+                    <option value="Cider">Cider</option>
+                    <option value="Cream Ale">Cream Ale</option>
+                    <option value="Doppelbock">Doppelbock</option>
+                    <option value="Dubbel">Dubbel</option>
+                    <option value="Gose">Gose</option>
+                    <option value="Hefeweizen">Hefeweizen</option>
+                    <option value="IPA">IPA</option>
+                    <option value="Lagers">Lagers</option>
+                    <option value=" Ale">Pale Ale</option>
+                    <option value="Pilsner">Pilsner</option>
+                    <option value="Porter">Porter</option>
+                    <option value="Saison/Farmhouse Ale">Saison/Farmhouse Ale</option>
+                    <option value="Sour Ale">Sour Ale</option>
+                    <option value="Specialty">Specialty</option>
+                    <option value="Tripel">Tripel</option>
+                    <option value="Wheat Ale">Wheat Ale</option>
+                    <option value="White Ale">White Ale</option>
+                    <option value="Other Ales">Other Ales</option>
+                </select>
+                <select id="brewery">
+                    <option value="" disabled selected>Brewery</option>
+                    <option value="17">Birdsong Brewing Co.</option>
+                    <option value="12">Blue Blaze Brewing Co.</option>
+                    <option value="16">Bold Missy Brewery</option>
+                    <option value="20">Catawba Brewing</option>
+                    <option value="15">Free Range Brewing</option>
+                    <option value="13">Heist Brewery</option>
+                    <option value="1">Hyde Brewing</option>
+                    <option value="18">Legion Brewing Co.</option>
+                    <option value="2">Lenny Boy Brewing Co. </option>
+                    <option value="14">NoDa Brewing Co.</option>
+                    <option value="7">Red Clay Ciderworks</option>
+                    <option value="19">Resident Culture Brewing</option>
+                    <option value="8">Sugar Creek Brewing Co.</option>
+                    <option value="3">Sycamore Brewing Co.</option>
+                    <option value="9">The Olde Mecklenburg Brewery</option>
+                    <option value="6">The Unknown Brewing Co.</option>
+                    <option value="11">Thirsty Nomad Brewing</option>
+                    <option value="10">Three Spirits Brewing</option>
+                    <option value="4">Triple C Brewing Co.</option>
+                    <option value="5">Wooden Robot Brewery</option>
+                </select>
+                <button class="addBeer">Add New Beer</button>
+            </form>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="assets/logic.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+        <script type="text/javascript " src="/auth.js"></script>
+</body>
+
+
+</html>

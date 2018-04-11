@@ -17,87 +17,100 @@
         <header role="banner">
             <div id="cd-logo">
                 <a href="index.html">
-                    <img src="http://via.placeholder.com/100x150" alt="Logo">
+                    CROWN TOWN CRAFTS
                 </a>
             </div>
 
             <nav class="main-nav">
                 <ul>
-                    <!-- inser more links here -->
+                    <!-- insert more links here -->
+                    <span class="hideUser">
+                        <li>
+                            <a class="cd-signin" href="#0">Sign in</a>
+                        </li>
+                        <li>
+                            <a class="cd-signup" href="#0">Sign up</a>
+                        </li>
+                    </span>
+                    <!-- Need code for hide/show
+                <span class="hideNotUser">
                     <li>
-                        <a class="cd-signin" href="#0">Sign in</a>
+                        <a class="cd-signin" href="#0">Profile</a>
                     </li>
                     <li>
-                        <a class="cd-signup" href="#0">Sign up</a>
+                        <a class="cd-signup" href="#0">Sign Out</a>
                     </li>
+                </span>
+            -->
                 </ul>
             </nav>
         </header>
-        <h1>Find your local craft beer</h1>
+        <h1>FIND YOUR LOCAL CRAFT BEER</h1>
         <!-- <h3>Search By:</h3> -->
         <div class="indexForm">
+            <form id="form">
+                <select class="typeSelect indexSelects" id="type">
+                    <option value="" disabled selected>Beer Type</option>
+                    <option value="Amber/Red Ale">Amber/Red Ale</option>
+                    <option value="Blonde/Golden Ale">Blonde/Golden Ale</option>
+                    <option value="Bock">Bock</option>
+                    <option value="Brown Ale">Brown Ale</option>
+                    <option value="Cider">Cider</option>
+                    <option value="Cream Ale">Cream Ale</option>
+                    <option value="Doppelbock">Doppelbock</option>
+                    <option value="Dubbel">Dubbel</option>
+                    <option value="Gose">Gose</option>
+                    <option value="Hefeweizen">Hefeweizen</option>
+                    <option value="IPA">IPA</option>
+                    <option value="Lagers">Lagers</option>
+                    <option value=" Ale">Pale Ale</option>
+                    <option value="Pilsner">Pilsner</option>
+                    <option value="Porter">Porter</option>
+                    <option value="Saison/Farmhouse Ale">Saison/Farmhouse Ale</option>
+                    <option value="Sour Ale">Sour Ale</option>
+                    <option value="Specialty">Specialty</option>
+                    <option value="Tripel">Tripel</option>
+                    <option value="Wheat Ale">Wheat Ale</option>
+                    <option value="White Ale">White Ale</option>
+                    <option value="Other Ales">Other Ales</option>
+                </select>
+                <select class="neighborhoodSelect indexSelects" id="neighborhood">
+                    <option value="" disabled selected>Neighborhood</option>
+                    <option value="South End">South End</option>
+                    <option value="West End">West End</option>
+                    <option value="Noda">Noda</option>
+                    <option value="Plaza Midwood">Plaza Midwood</option>
+                </select>
+                <select class="brewerySelect indexSelects" id="brewery">
+                    <option value="" disabled selected>Brewery</option>
+                    <option value="17">Birdsong Brewing Co.</option>
+                    <option value="12">Blue Blaze Brewing Co.</option>
+                    <option value="16">Bold Missy Brewery</option>
+                    <option value="20">Catawba Brewing</option>
+                    <option value="15">Free Range Brewing</option>
+                    <option value="13">Heist Brewery</option>
+                    <option value="1">Hyde Brewing</option>
+                    <option value="18">Legion Brewing Co.</option>
+                    <option value="2">Lenny Boy Brewing Co. </option>
+                    <option value="14">NoDa Brewing Co.</option>
+                    <option value="7">Red Clay Ciderworks</option>
+                    <option value="19">Resident Culture Brewing</option>
+                    <option value="8">Sugar Creek Brewing Co.</option>
+                    <option value="3">Sycamore Brewing Co.</option>
+                    <option value="9">The Olde Mecklenburg Brewery</option>
+                    <option value="6">The Unknown Brewing Co.</option>
+                    <option value="11">Thirsty Nomad Brewing</option>
+                    <option value="10">Three Spirits Brewing</option>
+                    <option value="4">Triple C Brewing Co.</option>
+                    <option value="5">Wooden Robot Brewery</option>
+                </select>
 
-            <select class="typeSelect indexSelects" id="type">
-                <option value="1" disabled selected>Beer Type</option>
-                <option value="Amber/Red Ale">Amber/Red Ale</option>
-                <option value="Blonde/Golden Ale">Blonde/Golden Ale</option>
-                <option value="Bock">Bock</option>
-                <option value="Brown Ale">Brown Ale</option>
-                <option value="Cider">Cider</option>
-                <option value="Cream Ale">Cream Ale</option>
-                <option value="Doppelbock">Doppelbock</option>
-                <option value="Dubbel">Dubbel</option>
-                <option value="Gose">Gose</option>
-                <option value="Hefeweizen">Hefeweizen</option>
-                <option value="IPA">IPA</option>
-                <option value="Lagers">Lagers</option>
-                <option value=" Ale">Pale Ale</option>
-                <option value="Pilsner">Pilsner</option>
-                <option value="Porter">Porter</option>
-                <option value="Saison/Farmhouse Ale">Saison/Farmhouse Ale</option>
-                <option value="Sour Ale">Sour Ale</option>
-                <option value="Specialty">Specialty</option>
-                <option value="Tripel">Tripel</option>
-                <option value="Wheat Ale">Wheat Ale</option>
-                <option value="White Ale">White Ale</option>
-                <option value="Other Ales">Other Ales</option>
-            </select>
-            <select class="neighborhoodSelect indexSelects" id="neighborhood">
-                <option value="2" disabled selected>Neighborhood</option>
-                <option value="South End">South End</option>
-                <option value="West End">West End</option>
-                <option value="Noda">Noda</option>
-                <option value="Plaza Midwood">Plaza Midwood</option>
-            </select>
-            <select class="brewerySelect indexSelects" id="brewery">
-                <option value="" disabled selected>Brewery</option>
-                <option value="17">Birdsong Brewing Co.</option>
-                <option value="12">Blue Blaze Brewing Co.</option>
-                <option value="16">Bold Missy Brewery</option>
-                <option value="20">Catawba Brewing</option>
-                <option value="15">Free Range Brewing</option>
-                <option value="13">Heist Brewery</option>
-                <option value="1">Hyde Brewing</option>
-                <option value="18">Legion Brewing Co.</option>
-                <option value="2">Lenny Boy Brewing Co. </option>
-                <option value="14">NoDa Brewing Co.</option>
-                <option value="7">Red Clay Ciderworks</option>
-                <option value="19">Resident Culture Brewing</option>
-                <option value="8">Sugar Creek Brewing Co.</option>
-                <option value="3">Sycamore Brewing Co.</option>
-                <option value="9">The Olde Mecklenburg Brewery</option>
-                <option value="6">The Unknown Brewing Co.</option>
-                <option value="11">Thirsty Nomad Brewing</option>
-                <option value="10">Three Spirits Brewing</option>
-                <option value="4">Triple C Brewing Co.</option>
-                <option value="5">Wooden Robot Brewery</option>
-            </select>
-
-            <button class="search indexSubmit" onclick="getVals()">
-                Search
-            </button>
-            <br>
-            <br>
+                <button class="search indexSubmit" onclick="getVals()">
+                    Search
+                </button>
+                <br>
+                <br>
+            </form>
         </div>
         <video class="visible-desktop" id="hero-vid" poster="assets/BeerPour.png" autoplay loop muted>
             <!-- <source type="video/mp4" src="BeerPour.mp4"></source> -->
@@ -109,55 +122,49 @@
         <img id="hero-pic" class="hidden-desktop" src="assets/BeerPour.png" alt="">
     </div>
 
-    <div id="content">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non ipsum tincidunt, consequat felis eu, venenatis arcu.
-            Quisque volutpat imperdiet ex commodo ultricies. Quisque ultricies quam ultrices pretium laoreet. Nullam faucibus
-            ultrices purus non iaculis. Mauris iaculis, neque a mollis interdum, ligula orci blandit lectus, ac eleifend
-            magna lectus eget lacus. Duis placerat tellus sit amet enim hendrerit laoreet. Praesent faucibus egestas nisl,
-            et efficitur arcu venenatis vitae. Mauris eu lorem vitae risus fringilla viverra. Vestibulum a dignissim augue,
-            non rhoncus lectus.
+    <div id="content" class="wrapper">
+        <div class="full brewHead">
+            <h4>Brewery</h4>
+            <h5>Founded: 1978</h5>
+            <div class="wrapper">
+                <div class="left">
+                    <span class="brew">Neighborhood</span>
+                    <span>West End</span>
+                </div>
+                <div class="middle">
+                    <span class="brew">Address</span>
+                    <span>123 Central Ave.</span>
+                </div>
+                <div class="right">
+                    <span class="brew">Website</span>
+                    <span>www.thingermabobbrewery.com</span>
+                </div>
+                <div class="full">
+                    <span class="brew">Description</span>
+                    <span> Maecenas rutrum leo at nulla facilisis fringilla. Maecenas eu nulla vitae felis lacinia pellentesque.
+                        Curabitur congue purus non volutpat elementum. Duis eu metus luctus, porta velit pulvinar, bibendum
+                        nisi. In erat ex, faucibus et mauris sit amet, consectetur lacinia quam.</span>
+                </div>
+            </div>
+        </div>
+        <div class="full">
+            <h5></h5>
+            <div class="wrapper">
+                <div class="leftTwo">
+                    <span>Beer Name</span>
+                    <span class="brew">Beer Type</span>
 
-        </p>
-
-        <p>
-            Aliquam semper libero dolor, sed ullamcorper sem cursus quis. Pellentesque luctus est sit amet quam varius, sed egestas lacus
-            varius. Proin tempus venenatis ultrices. Fusce mattis, justo ut consectetur viverra, diam turpis malesuada massa,
-            sed pharetra leo enim at nisi. Nam vel sapien eu libero accumsan molestie quis eu lorem. Vestibulum sodales lobortis
-            tempus. Cras tristique nibh tellus, sed placerat est blandit imperdiet. Maecenas rutrum leo at nulla facilisis
-            fringilla. Maecenas eu nulla vitae felis lacinia pellentesque. Curabitur congue purus non volutpat elementum.
-            Duis eu metus luctus, porta velit pulvinar, bibendum nisi. In erat ex, faucibus et mauris sit amet, consectetur
-            lacinia quam.
-
-        </p>
-        <p>
-            Nulla molestie, diam eu molestie ultricies, ligula magna bibendum nisi, sit amet dapibus nisl massa at nisi. Morbi vitae
-            elit tristique, molestie ante non, sodales neque. Proin non ipsum mauris. Phasellus tincidunt faucibus urna nec
-            gravida. Integer sit amet ullamcorper nibh, sit amet commodo eros. Pellentesque habitant morbi tristique senectus
-            et netus et malesuada fames ac turpis egestas. Fusce quis commodo diam. Quisque eu tortor a tortor tincidunt
-            varius ac eget lacus. Maecenas faucibus odio urna, nec semper elit auctor id. Nunc at commodo eros, sed porta
-            massa. Mauris at ultrices purus.
-
-        </p>
-        <p>
-            Vestibulum nec massa sit amet lorem pulvinar venenatis quis quis lectus. Etiam dictum ultrices tellus sit amet volutpat.
-            Suspendisse eget mollis ex. Phasellus at efficitur leo, sed faucibus tellus. Pellentesque ultricies arcu in dapibus
-            auctor. Proin eget sem mattis, tincidunt urna vitae, dignissim magna. Vestibulum ante ipsum primis in faucibus
-            orci luctus et ultrices posuere cubilia Curae; Duis quis sapien finibus, auctor ante sit amet, euismod quam.
-            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quis quam id purus
-            imperdiet viverra. Duis eu sapien tincidunt, tincidunt dui sed, rutrum sapien. Donec ut efficitur lacus, tincidunt
-            fringilla turpis. Vestibulum congue elit ex, quis luctus magna semper id.
-
-        </p>
-        <p>
-            Cras vestibulum volutpat mattis. Mauris consectetur non nunc vitae molestie. Etiam ac placerat justo. Cras turpis urna, lacinia
-            vitae pulvinar eu, lobortis ac eros. Cras bibendum tincidunt odio, nec luctus sem dictum et. Integer mi risus,
-            suscipit sed luctus vel, gravida scelerisque mauris. In hac habitasse platea dictumst. Nullam varius rutrum nisi
-            vitae volutpat. Suspendisse potenti. Nulla non blandit dui. Duis non sollicitudin leo. Nulla aliquam ullamcorper
-            condimentum. Curabitur lacinia, tellus vel tincidunt dictum, justo dolor imperdiet orci, et facilisis arcu metus
-            ut est. Aenean id est in justo vestibulum accumsan.
-
-        </p>
+                </div>
+                <div class="rightThird">
+                    <span class="fifty">
+                        ABV
+                    </span>
+                    <span class="fifty">
+                        IBU
+                    </span>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="cd-user-modal">
         <!-- this is the entire modal form, including the background -->
@@ -225,17 +232,6 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="assets/logic.js"></script>
-    <script>
-        //for length of Brewery List add option (alphabetical?)
-        function getVals() {
-            var typeSelect = document.getElementById('type');
-            var neighborhoodSelect = document.getElementById('neighborhood');
-            var brewerySelect = document.getElementById('brewery');
-            console.log(typeSelect.value);
-            console.log(neighborhoodSelect.value);
-            console.log(brewerySelect.value);
-        }
-    </script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <script type="text/javascript " src="/auth.js"></script>
 </body>

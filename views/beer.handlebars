@@ -1,7 +1,11 @@
 <h1>Crown Town Crafts</h1>
 <h3></h3>
 
-
+{{#each Brewery}}
+    <ul>
+        <li>{{brewery_name}}</li>
+        <li>{{address}}</li>
+    </ul>
 <table>
     {{#each Beer}}
     <tr>
@@ -11,6 +15,7 @@
     </tr>
     {{/each}}
 </table>
+{{/each}}
 
 {{#each Beer}}
     <p style="color:blue;">{{this}}</p>

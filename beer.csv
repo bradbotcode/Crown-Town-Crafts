@@ -1,266 +1,266 @@
-1,Lavender Skies,9%,51,Saison/Farmhouse Ale,Saison/Farmhouse Ale,0,"NULL,NULL",1
-2,The Suffolk Brunch,6%,33,Stout,Stout,0,"NULL,NULL",1
-3,Little Dorrit,10.20%,50,Barleywine,Other Ales,0,"NULL,NULL",1
-4,Citrus Savvy,5.35%,32,Pale Wheat Ale,Wheat Ale,0,"NULL,NULL",1
-5,Hyde In The Plaza,6.01%,31,IPA,IPA,0,"NULL,NULL",1
-6,The Pot's Crock,7%,33,Stout,Stout,0,"NULL,NULL",1
-7,William Makesbeer,7%,55,Strong Ale,Other Ales,0,"NULL,NULL",1
-8,Alorah Maple Ale,8.40%,45,Old Ale,Other Ales,0,"NULL,NULL",1
-9,The Unruly Pig,6.10%,48,Extra Special,Specialty,0,"NULL,NULL",1
-10,The Belligerent Blonde,4.30%,20,Blonde Ale,Blonde/Golden Ale,0,"NULL,NULL",1
-11,Dear Old Blighty,3.80%,15,English Mild Ale,Other Ales,0,"NULL,NULL",1
-12,Huell Is In Session,4.10%,34,Session IPA,IPA,0,"NULL,NULL",1
-13,New Bern Brown,5.45%,10,English Brown Ale,Brown Ale,0,"NULL,NULL",1
-14,Hidden Jewel,5.02%,20,English Bitter,Pale Ale,0,"NULL,NULL",1
-15,Backwoods Pale Ale,6.90%,35,American Pale Ale,Pale Ale,0,"NULL,NULL",1
-16,Belgian Table Beer,4.20%,10,Table Beer,Specialty,0,"NULL,NULL",1
-17,Perfect Lines,5.90%,42,American IPA,IPA,0,"NULL,NULL",1
-18,Citraphilia,6.40%,65,American IPA,IPA,0,"NULL,NULL",2
-19,Dat Pale,5.20%,50,American Pale Ale,Pale Ale,0,"NULL,NULL",2
-20,Laughing Yogi,4.80%,12,Belgian Pale Ale,Pale Ale,0,"NULL,NULL",2
-21,Tropicalus,6%,70,White IPA,IPA,0,"NULL,NULL",2
-22,Life In The South,4.50%,25,American Light Lager,Lager,0,"NULL,NULL",2
-23,Booty Call,8.70%,80,Imperial Double IPA,IPA,0,"NULL,NULL",2
-24,Burn Down Brown,5%,27,English Brown Ale,Brown Ale,0,"NULL,NULL",2
-25,Mountain Candy,7.50%,0,IPA,IPA,0,"NULL,NULL",3
-26,Countryside,6%,0,American IPA,IPA,0,"NULL,NULL",3
-27,Southern Girl,5.10%,45,Blonde Ale,Blonde/Golden Ale,0,"NULL,NULL",3
-28,Sun Grown,4.80%,0,Fresh Craft Lager,Lager,0,"NULL,NULL",3
-29,Citropica,6.80%,60,IPA,IPA,0,"NULL,NULL",3
-30,Rainbow Dust,7.10%,0,IPA,IPA,0,"NULL,NULL",3
-31,Strawberry Lemonade,4.80%,0,Gose,Gose ,0,"NULL,NULL",3
-32,Gourd Have Mercy,6.20%,0,Pumpkin Amber,Amber/Red Ale,0,"NULL,NULL",3
-33,Naughty Bear,7%,0,Winter Ale,Other Ales,0,"NULL,NULL",3
-34,Golden Boy,4.50%,23,Blonde Ale,Blonde/Golden Ale,0,"NULL,NULL",4
-35,Zest-A-Peel,5.20%,10,Ale,Other Ales,0,"NULL,NULL",4
-36,Light Rail,4.50%,40,Pale Ale,Pale Ale,0,"NULL,NULL",4
-37,3C,6.20%,70,IPA,IPA,0,"NULL,NULL",4
-38,Baby Maker,8.50%,80,Double IPA,IPA,0,"NULL,NULL",4
-39,Grill Friend,5.50%,29,Smoked Amber Ale,Amber/Red Ale,0,"NULL,NULL",4
-40,Clt-Mo,5.60%,40,Pale Ale,Pale Ale,0,"NULL,NULL",4
-41,Urban Hop Project,6.10%,65,Fresh Hop IPA,IPA,0,"NULL,NULL",4
-42,Crane City,4.40%,40,Session IPA,IPA,0,"NULL,NULL",4
-43,The Double Imbibes,9.50%,32,BBA Coffee Stout,Stout,0,"NULL,NULL",4
-44,Hyzer,5.20%,23,Hefeweizen,Hefeweizen,0,"NULL,NULL",4
-45,NC Nector,6.60%,15,Honey Blonde Ale,Blonde/Golden Ale,0,"NULL,NULL",4
-46,Session 7,4.80%,52,Session IPA,IPA,0,"NULL,NULL",4
-47,Cajun Stout,5.60%,21,Stout,Stout,0,"NULL,NULL",4
-48,Sal's Paradise,5.30%,32,Saison,Saison/Farmhouse Ale,0,"NULL,NULL",4
-49,Chocolate Covered Pretzel Stout,9.20%,32,Stout,Stout,0,"NULL,NULL",4
-50,The Force,8.80%,30,RBA Belgian Tripel,Tripel,0,"NULL,NULL",4
-51,Up All Night,10%,38,Breakfast Porter,Porter,0,"NULL,NULL",4
-52,Good Morning Vietnam,5.00%,40,Coffee Vanilla Blonde Ale,Blonde/Golden Ale,0,"NULL,NULL",5
-53,Overachiever,5.30%,0,Pale Ale,Pale Ale,0,"NULL,NULL",5
-54,What He's Having,6.70%,70,IPA,IPA,0,"NULL,NULL",5
-55,Over The Clouds,8.50%,68,DIPA,IPA,0,"NULL,NULL",5
-56,In The Clouds,8.50%,0,DIPA,IPA,0,"NULL,NULL",5
-57,Farmhouse Blanc,7.50%,0,Farmhouse Ale,Saison/Farmhouse Ale,0,"NULL,NULL",5
-58,To Salinity And Beyond,4%,0,Oyster Gose,Gose ,0,"NULL,NULL",5
-59,Velvet Evolver,5.80%,0,Vanilla Brown Ale,Brown Ale,0,"NULL,NULL",5
-60,Blueberry Swirl It!,5.60%,0,Blueberry Vanilla Sour Ale,Sour Ale,0,"NULL,NULL",5
-61,Get Sprung,6%,0,IPA,IPA,0,"NULL,NULL",5
-62,Feather Light,3.80%,0,Light Berliner Style Ale,Blonde/Golden Ale,0,"NULL,NULL",6
-63,Over The Edge,6.40%,65,American IPA,IPA,0,"NULL,NULL",6
-64,Pre Game,4.50%,0,Session Ale,Other Ales,0,"NULL,NULL",6
-65,Scratch N' Sniff,4.80%,0,Aromatic IPA,IPA,0,"NULL,NULL",6
-66,Ginger Wheat,5.10%,0,Wheat,Wheat Ale,0,"NULL,NULL",6
-67,Tele Porter,7.20%,0,Coffee Porter,Porter,0,"NULL,NULL",6
-68,Hospitali Tea,5.40%,0,Southern Amber,Amber/Red Ale,0,"NULL,NULL",6
-69,Brown Ryed Girl,6.50%,0,Indian Brown Ale,Brown Ale,0,"NULL,NULL",6
-70,Venture,6.50%,0,American Stout,Stout,0,"NULL,NULL",6
-71,Rasin The Roof,11.50%,0,Belgian Quad,Brown Ale,0,"NULL,NULL",6
-72,Battle O Shirts,7.70%,0,Scottish Ale,Other Ales,0,"NULL,NULL",6
-73,Lets Get Tropical ,5.80%,0,American IPA,IPA,0,"NULL,NULL",6
-74,Krash The Kremlin,12.40%,0,Russian Imperial Stout,Stout,0,"NULL,NULL",6
-75,Dirty Commie Heathen,12.40%,0,Russian Imperial Stout,Stout,0,"NULL,NULL",6
-76,Rye Felicia,5.40%,0,Open Fermented Bret IPA,IPA,0,"NULL,NULL",6
-77,Imperial Tele Porter,9.00%,0,Imperial Porter,Porter,0,"NULL,NULL",6
-78,Bright Ass Tank Tops,4.10%,0,Barrel Aged Key Lime Gose,Gose ,0,"NULL,NULL",6
-79,Queen City Common,6.90%,0,Cider,Cider,0,"NULL,NULL",7
-80,Hoppin Good Tyhmeâ„¢,6.90%,0,Cider,Cider,0,"NULL,NULL",7
-81,Bramblin Blackberry,7.25%,0,Cider,Cider,0,"NULL,NULL",7
-82,The South End,6.25%,0,Cider,Cider,0,"NULL,NULL",7
-83,Nor' Easter,6.90%,0,Cider,Cider,0,"NULL,NULL",7
-84,Cherry Bobbin' Trolls,6.90%,0,Cider,Cider,0,"NULL,NULL",7
-85,Sugar Creek Pale Ale,5.20%,40,Pale Ale,Pale Ale,0,"NULL,NULL",8
-86,Sugar Creek White Ale,4.90%,16,White Ale,White Ale,0,"NULL,NULL",8
-87,Sugar Creek Raspberry White Ale,4.40%,15,Raspberry White Ale,White Ale,0,"NULL,NULL",8
-88,Sugar Creek IPA,6.70%,60,IPA,IPA,0,"NULL,NULL",8
-89,BiÃ©re de Garde,6.80%,20,BiÃ©re de Garde,Saison/Farmhouse Ale,0,"NULL,NULL",8
-90,Belgian Dubbel,7.60%,22,Belgian Dubbel,Dubbel,0,"NULL,NULL",8
-91,Atmosphera Tripel,9.70%,18,Belgian Tripel,Tripel,0,"NULL,NULL",8
-92,Sugar Creek Porter,5.70%,18,Porter,Porter,0,"NULL,NULL",8
-93,Sugar Creek Pilsner,5%,40,Belgian Pilsner,Pilsner,0,"NULL,NULL",8
-94,Mocha Java Porter,5.20%,16,Porter,Porter,0,"NULL,NULL",8
-95,Sugar Creek Saison,6.60%,25,Saison,Saison/Farmhouse Ale,0,"NULL,NULL",8
-96,Copper,4.80%,31,Altbier,Amber/Red Ale,0,"NULL,NULL",9
-97,Capt Jack,4.90%,27,German Pilsner,Pilsner,0,"NULL,NULL",9
-98,Southside Weiss,5.40%,16,American Pale Wheat Ale,Wheat Ale,0,"NULL,NULL",9
-99,Mecklenburger,4.90%,20,Munich Helles Lager,Lager,0,"NULL,NULL",9
-100,Mecktoberfest,5.40%,24,Oktoberfest,Lager,0,"NULL,NULL",9
-101,Bauern Bock ,7.50%,30,Doppelbock,Doppelbock,0,"NULL,NULL",9
-102,Dunkel,4.90%,28,Munich Dunkel Lager,Lager,0,"NULL,NULL",9
-103,Yule Bock,7%,30,Bock,Bock,0,"NULL,NULL",9
-104,Fat Boy Baltic Porter,8%,30,Porter,Porter,0,"NULL,NULL",9
-105,FrÃ¼h Bock,6%,28,Helles Bock,Bock,0,"NULL,NULL",9
-106,Hornet's Nest,5.40%,14,Hefeweizen,Hefeweizen,0,"NULL,NULL",9
-107,Red Moon Rising,4.50%,20,American Amber Lager,Amber/Red Ale,0,"NULL,NULL",10
-108,Honey Porter,6%,25,English Porter,Porter,0,"NULL,NULL",10
-109,Ain't No Hop Steppin',6.50%,82,IPA,IPA,0,"NULL,NULL",10
-110,Southern Bliss,5%,25,Light Golden Ale,Blonde/Golden Ale,0,"NULL,NULL",10
-111,Agate Have It!,5%,20,English Brown Ale,Brown Ale,0,"NULL,NULL",10
-112,King Rassafassa Ale,6.50%,35,Belgian Saison,Saison/Farmhouse Ale,0,"NULL,NULL",10
-113,Helles Bane,5%,19,Munich Helles ,Lager,0,"NULL,NULL",10
-114,BrÃ¼e de Tabu,6%,17,Cream Ale,Cream Ale,0,"NULL,NULL",10
-115,Sweet Memories,5%,28,Stout,Stout,0,"NULL,NULL",10
-116,Dream Of Wheat,4.50%,18,Wheat Beer,Wheat Ale,0,"NULL,NULL",10
-117,Red Maembe,5.50%,45,Pale Ale,Pale Ale,0,"NULL,NULL",10
-118,Kosch Groove,5.50%,20,Light Ale,Blonde/Golden Ale,0,"NULL,NULL",10
-119,Grog,6.50%,67,IPA,IPA,0,"NULL,NULL",10
-120,The Ghost Of Pumpkins Past,5%,20,Pumpkin Ale,Other Ales,0,"NULL,NULL",10
-121,Harry's English Red,5%,25,British Brown Ale,Brown Ale,0,"NULL,NULL",11
-122,Newtown Pippin,6.90%,0,Cider,Cider,0,"NULL,NULL",11
-123,Citra-Fiable,6.50%,72,American IPA,IPA,0,"NULL,NULL",11
-124,Companion,4.50%,20,Blonde Ale,Blonde/Golden Ale,0,"NULL,NULL",11
-125,Cranoble ,6%,19,Fruit Beer,Specialty,0,"NULL,NULL",11
-126,Infamous Grouse,9.20%,38,Barrel Aged Specialty Beer,Barrel Aged Beer,0,"NULL,NULL",11
-127,LMB,5.50%,40,British Amber,Amber/Red Ale,0,"NULL,NULL",11
-128,Seeker,5%,45,Session IPA,IPA,0,"NULL,NULL",11
-129,Sweeney,5.50%,30,London Porter,Porter,0,"NULL,NULL",11
-130,What's The Craic,5.60%,22,Irish Red Ale,Amber/Red Ale,0,"NULL,NULL",11
-131,Ryme,5%,31,Rye Pale Ale,Pale Ale,0,"NULL,NULL",11
-132,Cherry Miskatonic,5.50%,40,Hazy IPA,IPA,0,"NULL,NULL",11
-133,Companion,4.50%,0,American Blonde Ale,Blonde/Golden Ale,0,"NULL,NULL",12
-134,Femme Fatale Brown Ale,4.00%,0,English Brown Ale,Brown Ale,0,"NULL,NULL",12
-135,Hunter IPA,7.50%,0,American IPA,IPA,0,"NULL,NULL",12
-136,Mad Science Expermiment: Nostalgia,5.40%,0,Cream Ale,Cream Ale,0,"NULL,NULL",12
-137,Mad Science Experiment: Berliner Weisse,2.50%,0,Berliner Weissbier,Wheat Ale,0,"NULL,NULL",12
-138,Mad Science Experiment: Dirty Blonde,6.70%,0,American Blonde Ale,Blonde/Golden Ale,0,"NULL,NULL",12
-139,Noble Saison,5.00%,0,Saison,Saison/Farmhouse Ale,0,"NULL,NULL",12
-140,Seeker IPA,6.00%,0,American IPA,IPA,0,"NULL,NULL",12
-141,Sweeney,5.50%,0,English Porter,Porter,0,"NULL,NULL",12
-142,Ta Wit Ta Woo,4.70%,0,Witbier,Wheat Ale,0,"NULL,NULL",12
-143,Vagabond,7.10%,0,Weizenbock,Wheat Ale,0,"NULL,NULL",12
-144,Valkyrie Chocolatte Stout,6.00%,0,American Stout,Stout,0,"NULL,NULL",12
-145,Weissen Schild,6.00%,0,Hefeweizen,Hefeweizen,0,"NULL,NULL",12
-146,Alpine Lente Meadow Maibbock,6.40%,0,Helles Bock,Bock,0,"NULL,NULL",13
-147,Alpine Wiesen Oktoberfest,5.60%,0,Oktoberfest,Lager,0,"NULL,NULL",13
-148,Amber Blaze,5.60%,0,American Amber / Red Ale,Amber/Red Ale,0,"NULL,NULL",13
-149,B. MacKaye's Hepp Raisin' Scotch Ale,7.70%,0,Scotch Ale / Wee Heavy,Other Ales,0,"NULL,NULL",13
-150,Black Blaze Millk Stout,5.00%,0,Milk / Sweet Stout,Stout,0,"NULL,NULL",13
-151,Blue Blaze Altbier,5.00%,0,Altbier,Amber/Red Ale,0,"NULL,NULL",13
-152,Carolina Thread Trail,4.50%,0,American Pale Ale (APA),Pale Ale,0,"NULL,NULL",13
-153,Double Blaze Black IPA,6.10%,0,American Black Ale,Other Ales,0,"NULL,NULL",13
-154,Lean Too,9.00%,0,Doppelbock,Doppelbock,0,"NULL,NULL",13
-155,Lean Too- Rua Whiskey Barrel-Aged,9.00%,0,Dopplelbock,Doppelbock,0,"NULL,NULL",13
-156,PCT West Coast Style IPA,6.50%,0,American IPA,IPA,0,"NULL,NULL",13
-157,Pink Blazer,5.30%,0,Hefeweizen,Hefeweizen,0,"NULL,NULL",13
-158,Poplar Tent Pale Ale,5.60%,0,American Pale Ale (APA),Pale Ale,0,"NULL,NULL",13
-159,Tropical Storm IPA,6.40%,0,American IPA,IPA,0,"NULL,NULL",13
-160,Ursa Major,8.10%,0,American Double / Imperial IPA,IPA,0,"NULL,NULL",13
-161,Yellow Blazer Kolsch,5.00%,0,Kolsch,Lager,0,"NULL,NULL",13
-162,Amber Ale,5.80%,0,American Amber / Red Ale,Amber/Red Ale,0,"NULL,NULL",13
-163,Rasberry Soiree,4.20%,0,Berliner Weissbier,Wheat Ale,0,"NULL,NULL",13
-164,Blue Byway 2.0,6.70%,0,Berliner Weissbier,Wheat Ale,0,"NULL,NULL",13
-165,Thirst,6.30%,0,American IPA,IPA,0,"NULL,NULL",13
-166,Traeblod,11.00%,0,Stout - Imperial / Double,Stout,0,"NULL,NULL",13
-167,Room For Activities,7.20%,0,IPA - New England,IPA,0,"NULL,NULL",13
-168,Blurred Up,8.40%,0,IPA - Imperial / Double,IPA,0,"NULL,NULL",13
-169,Bee Fruitfull,7.60%,0,IPA - Imperial / Double,IPA,0,"NULL,NULL",13
-170,lemon Drop Bee Invasion,5.50%,0,Blonde Ale,Blonde/Golden Ale,0,"NULL,NULL",13
-171,Uber Quench'l,8.20%,0, IPA - Imperial / Double,IPA,0,"NULL,NULL",13
-172,MO-J,7.10%,0,IPA - New England,IPA,0,"NULL,NULL",13
-173,Flava In Ya Ear,8.10%,0,IPA - Imperial / Double,IPA,0,"NULL,NULL",13
-174,"Hop, Drop 'n Roll",7.20%,80,American IPA,IPA,0,"NULL,NULL",14
-175,Jam Session,5.10%,31,American Pale Ale,Pale Ale,0,"NULL,NULL",14
-176,Coco Loco,6.20%,40,Porter - American,Porter,0,"NULL,NULL",14
-177,CAVU,4.60%,18,Blonde Ale,Blonde/Golden Ale,0,"NULL,NULL",14
-178,Hop Cakes,10.25%,118,IPA - Imperial / Double,IPA,0,"NULL,NULL",14
-179,Gordgeous,6.40%,29,Pumkin / Yam Beer,Other Ales,0,"NULL,NULL",14
-180,Par 4,4%,65,IPA - India Session Ale,IPA,0,"NULL,NULL",14
-181,Ramble On Red,5%,30,Red Ale,Amber/Red Ale,0,"NULL,NULL",14
-182,Premium Roast Coffee,5%,35,Stout - American,Stout,0,"NULL,NULL",14
-183,Roaring Riot,5.50%,45,Rye Beer,Lager,0,"NULL,NULL",14
-184,Mother Shucker,6.70%,0,Stout - Oyster,Stout,0,"NULL,NULL",14
-185,Woody & Wilcox's Hop Experiment Session Ale,4.90%,0,IPA - India Session Ale,IPA,0,"NULL,NULL",14
-186,"If You Don't Know, Now You Know",6%,40,IPA - New England,IPA,0,"NULL,NULL",14
-187,Boba Brett,5.70%,5,Sour Ale,Sour Ale,0,"NULL,NULL",14
-188,Muffin Top,6.80%,50,Red Ale,Amber/Red Ale,0,"NULL,NULL",14
-189,Double Whirpool IPA,8%,50,IPA - American,IPA,0,"NULL,NULL",14
-190,Enderly Espresso Stout,8%,0,Stout - American,Stout,0,"NULL,NULL",14
-191,Sweet Tater Fluff Lager,6.30%,20,Lager - Amber,Lager,0,"NULL,NULL",14
-192,Texas Brown Ale,5%,45,Brown Ale,Brown Ale,0,"NULL,NULL",14
-193,2017 Anniversary Ale,12.30%,0,Strong Ale,Other Ales,0,"NULL,NULL",14
-194,Fifty Shades of Haze,5.70%,0,American Pale Ale,Pale Ale,0,"NULL,NULL",14
-195,My Old Friend,7%,0,Carolina Dark Sour,Sour Ale,0,"NULL,NULL",15
-196,"Susie, Gingerly",4.70%,0,Carolina Grisette,Saison/Farmhouse Ale,0,"NULL,NULL",15
-197,Who Do Ya Knead?,4%,0,American IPA,IPA,0,"NULL,NULL",15
-198,All The Things,11%,0,IPA ,IPA,0,"NULL,NULL",15
-199,A Bigh F.H.,11%,0,Imperial Brown Ale,Brown Ale,0,"NULL,NULL",15
-200,Barracuda Bill's,4.80%,0,Pilsner,Pilsner,0,"NULL,NULL",15
-201,Hard To Kickm Another Bad Habit (nitro),6%,0,Porter,Porter,0,"NULL,NULL",15
-202,Sunac Tonic,5.80%,0,Gruit,Specialty,0,"NULL,NULL",15
-203,Awesome Possum,6%,0,American IPA,IPA,0,"NULL,NULL",15
-204,Cream Of The Crop,5%,0,American Cream Ale,Cream Ale,0,"NULL,NULL",15
-205,Rocket Ride,6.90%,60,IPA,IPA,0,"NULL,NULL",16
-206,Git Yer Gun,4.90%,20,Golden Ale,Blonde/Golden Ale,0,"NULL,NULL",16
-207,Solo Flight,5.50%,24,Brown Ale,Brown Ale,0,"NULL,NULL",16
-208,Find A Way,4.90%,24,Wheat Ale,Wheat Ale,0,"NULL,NULL",16
-209,Conquer The Route,7.20%,20,Choclate Stout,Stout,0,"NULL,NULL",16
-210,Higher Ground,7.00%,65,West Coast IPA,IPA,0,"NULL,NULL",17
-211,Lazy Bird Brown Ale,5.50%,45,Brown Ale,Brown Ale,0,"NULL,NULL",17
-212,Jalepeno Pale Ale,5.50%,45,Pale Ale,Pale Ale,0,"NULL,NULL",17
-213,Pardise City Session IPA,4.80%,45,Session IPA,IPA,0,"NULL,NULL",17
-214,Doin Thyme Witbier,4.30%,15,Belgian-Style Wheat Ale,Wheat Ale,0,"NULL,NULL",17
-215,Fake Plastic Trees Hoppy Wheat,6.40%,40,Wheat Ale,Wheat Ale,0,"NULL,NULL",17
-216,Wake Up Porter,5.80%,29,Porter,Porter,0,"NULL,NULL",17
-217,MexiCalie Stout,5.80%,35,Stout,Stout,0,"NULL,NULL",17
-218,Honey Pie Double IPA,8.90%,80,IPA,IPA,0,"NULL,NULL",17
-219,Say It To My Face Double Red IPA,7.70%,70,IPA,IPA,0,"NULL,NULL",17
-220, Up On The Sun Saison,7.50%,35,Sasion,Saison/Farmhouse Ale,0,"NULL,NULL",17
-221,Eat A Peach Pale Ale,4.90%,35,Pale Ale,Pale Ale,0,"NULL,NULL",17
-222,St. Tuber Abbey Ale,6.50%,25,Ale,Other Ales,0,"NULL,NULL",17
-223,Turtles on Pterodactyls,8%,35,Barrel Aged Beer,Barrel Aged Beer,0,"NULL,NULL",17
-224,Mongeese On Monkeys,9%,45,Barrel Aged Beer,Barrel Aged Beer,0,"NULL,NULL",17
-225, Puppies On Penguins,9.30%,35,Barrel Aged Beer,Barrel Aged Beer,0,"NULL,NULL",17
-226,Bourbon Barrel Aged St. Tuber,9%,25,Barrel Aged Beer,Barrel Aged Beer,0,"NULL,NULL",17
-227,Weasels On Woodpreckers,7.50%,35,Barrel Aged Beer,Barrel Aged Beer,0,"NULL,NULL",17
-228,Carolina Sparkle Party,4%,8,Berliner Weisse,Wheat Ale,0,"NULL,NULL",18
-229,Red Rover,5%,28,Irish Red Ale,Amber/Red Ale,0,"NULL,NULL",18
-230,Freedom Park Pale,5.20%,40,American Pale Ale,Pale Ale,0,"NULL,NULL",18
-231,Slainte,5.10%,40,Irish Stout,Stout,0,"NULL,NULL",18
-232,Juicy Jay,6.30%,68,East Coast IPA,IPA,0,"NULL,NULL",18
-233,Maple Canyon,6.10%,31,Brown Ale,Brown Ale,0,"NULL,NULL",18
-234,Project Pils,4.80%,15,Pilsner,Pilsner,0,"NULL,NULL",18
-235,Daylight Ninja ,5.50%,7,Farmhouse Ale,Saison/Farmhouse Ale,0,"NULL,NULL",18
-236,Boo and Kay's Big Day,6.50%,53,NE-Style IPA,IPA,0,"NULL,NULL",18
-237,Path To The Dark Side,5%,30,Oatmeal Stout,Stout,0,"NULL,NULL",18
-238,The Ides of Hops,8%,45,Double IPA,IPA,0,"NULL,NULL",18
-239,Turn Style,6%,0,IPA ,IPA,0,"NULL,NULL",19
-240,Beer Legs,6%,0,IPA,IPA,0,"NULL,NULL",19
-241,Finer Things,4.20%,0,Helles Lager,Lager,0,"NULL,NULL",19
-242,Thunder Stud,8.30%,0,IPA,IPA,0,"NULL,NULL",19
-243,Breather,5.20%,0,Pilsner,Pilsner,0,"NULL,NULL",19
-244,Baby King,4.50%,0,Blonde Ale,Blonde/Golden Ale,0,"NULL,NULL",19
-245,Screaming Eagle,6%,0,Porter,Porter,0,"NULL,NULL",19
-246,Carolina Del Norte,5.50%,25,Mexican-Style Lager,Lager,0,"NULL,NULL",20
-247,Friki Tiki,6.50%,60,Dragon Fruit IPA,IPA,0,"NULL,NULL",20
-248,Peanut Butter Jelly Time,5.70%,10,Specialty Brown Ale,Brown Ale,0,"NULL,NULL",20
-249,Evening Joe,5.70%,25,Coffee Blonde,Blonde/Golden Ale,0,"NULL,NULL",20
-250,LD's,10%,30,Belgian Tripel,Tripel,0,"NULL,NULL",20
-251,Peanut Butter Choclate Stout,5.40%,52,Specialty Stout,Stout,0,"NULL,NULL",20
-252,Deep State,7.30%,33,Baltic Porter,Porter,0,"NULL,NULL",20
-253,Hopness Monster,6.50%,60,IPA,IPA,0,"NULL,NULL",20
-254,White Zombie,5.10%,7,White Ale,White Ale,0,"NULL,NULL",20
-255,Farmer Ted,6%,7,Cream Ale,Cream Ale,0,"NULL,NULL",20
-256,Mother Trucker,5%,51,Pale Ale,Pale Ale,0,"NULL,NULL",20
-257,CLT,7.20%,51,IPA,IPA,0,"NULL,NULL",20
-258,Astral Bootie Beer ,4.50%,40,Session IPA,IPA,0,"NULL,NULL",20
-259,Brown Bear,5.20%,30,Brown Ale,Brown Ale,0,"NULL,NULL",20
-260,Black Dome,6%,30,Stout,Stout,0,"NULL,NULL",20
-261,Revenuers Red,5.20%,32,Red Ale,Amber/Red Ale,0,"NULL,NULL",20
-262,Ted Light Lime ,4.50%,7,Lime Ale,Specialty,0,"NULL,NULL",20
-263, Eno Pilsner,4.90%,39,Pilsner,Pilsner,0,"NULL,NULL",20
-264,Hooligan,8%,45,Scotch Ale,Other Ales,0,"NULL,NULL",20
-265,King Coconut,5.50%,30,Porter,Porter,0,"NULL,NULL",20
-266,King Don's,5.50%,5,Pumkin Ale,Other Ales,0,"NULL,NULL",20
+1,Lavender Skies,9%,51,Saison/Farmhouse Ale,Saison/Farmhouse Ale,0,"NULL,NULL",1,South End
+2,The Suffolk Brunch,6%,33,Stout,Stout,0,"NULL,NULL",1,South End
+3,Little Dorrit,10.20%,50,Barleywine,Other Ales,0,"NULL,NULL",1,South End
+4,Citrus Savvy,5.35%,32,Pale Wheat Ale,Wheat Ale,0,"NULL,NULL",1,South End
+5,Hyde In The Plaza,6.01%,31,IPA,IPA,0,"NULL,NULL",1,South End
+6,The Pot's Crock,7%,33,Stout,Stout,0,"NULL,NULL",1,South End
+7,William Makesbeer,7%,55,Strong Ale,Other Ales,0,"NULL,NULL",1,South End
+8,Alorah Maple Ale,8.40%,45,Old Ale,Other Ales,0,"NULL,NULL",1,South End
+9,The Unruly Pig,6.10%,48,Extra Special,Specialty,0,"NULL,NULL",1,South End
+10,The Belligerent Blonde,4.30%,20,Blonde Ale,Blonde/Golden Ale,0,"NULL,NULL",1,South End
+11,Dear Old Blighty,3.80%,15,English Mild Ale,Other Ales,0,"NULL,NULL",1,South End
+12,Huell Is In Session,4.10%,34,Session IPA,IPA,0,"NULL,NULL",1,South End
+13,New Bern Brown,5.45%,10,English Brown Ale,Brown Ale,0,"NULL,NULL",1,South End
+14,Hidden Jewel,5.02%,20,English Bitter,Pale Ale,0,"NULL,NULL",1,South End
+15,Backwoods Pale Ale,6.90%,35,American Pale Ale,Pale Ale,0,"NULL,NULL",1,South End
+16,Belgian Table Beer,4.20%,10,Table Beer,Specialty,0,"NULL,NULL",1,South End
+17,Perfect Lines,5.90%,42,American IPA,IPA,0,"NULL,NULL",1,South End
+18,Citraphilia,6.40%,65,American IPA,IPA,0,"NULL,NULL",2,South End
+19,Dat Pale,5.20%,50,American Pale Ale,Pale Ale,0,"NULL,NULL",2,South End
+20,Laughing Yogi,4.80%,12,Belgian Pale Ale,Pale Ale,0,"NULL,NULL",2,South End
+21,Tropicalus,6%,70,White IPA,IPA,0,"NULL,NULL",2,South End
+22,Life In The South,4.50%,25,American Light Lager,Lager,0,"NULL,NULL",2,South End
+23,Booty Call,8.70%,80,Imperial Double IPA,IPA,0,"NULL,NULL",2,South End
+24,Burn Down Brown,5%,27,English Brown Ale,Brown Ale,0,"NULL,NULL",2,South End
+25,Mountain Candy,7.50%,0,IPA,IPA,0,"NULL,NULL",3,South End
+26,Countryside,6%,0,American IPA,IPA,0,"NULL,NULL",3,South End
+27,Southern Girl,5.10%,45,Blonde Ale,Blonde/Golden Ale,0,"NULL,NULL",3,South End
+28,Sun Grown,4.80%,0,Fresh Craft Lager,Lager,0,"NULL,NULL",3,South End
+29,Citropica,6.80%,60,IPA,IPA,0,"NULL,NULL",3,South End
+30,Rainbow Dust,7.10%,0,IPA,IPA,0,"NULL,NULL",3,South End
+31,Strawberry Lemonade,4.80%,0,Gose,Gose ,0,"NULL,NULL",3,South End
+32,Gourd Have Mercy,6.20%,0,Pumpkin Amber,Amber/Red Ale,0,"NULL,NULL",3,South End
+33,Naughty Bear,7%,0,Winter Ale,Other Ales,0,"NULL,NULL",3,South End
+34,Golden Boy,4.50%,23,Blonde Ale,Blonde/Golden Ale,0,"NULL,NULL",4,South End
+35,Zest-A-Peel,5.20%,10,Ale,Other Ales,0,"NULL,NULL",4,South End
+36,Light Rail,4.50%,40,Pale Ale,Pale Ale,0,"NULL,NULL",4,South End
+37,3C,6.20%,70,IPA,IPA,0,"NULL,NULL",4,South End
+38,Baby Maker,8.50%,80,Double IPA,IPA,0,"NULL,NULL",4,South End
+39,Grill Friend,5.50%,29,Smoked Amber Ale,Amber/Red Ale,0,"NULL,NULL",4,South End
+40,Clt-Mo,5.60%,40,Pale Ale,Pale Ale,0,"NULL,NULL",4,South End
+41,Urban Hop Project,6.10%,65,Fresh Hop IPA,IPA,0,"NULL,NULL",4,South End
+42,Crane City,4.40%,40,Session IPA,IPA,0,"NULL,NULL",4,South End
+43,The Double Imbibes,9.50%,32,BBA Coffee Stout,Stout,0,"NULL,NULL",4,South End
+44,Hyzer,5.20%,23,Hefeweizen,Hefeweizen,0,"NULL,NULL",4,South End
+45,NC Nector,6.60%,15,Honey Blonde Ale,Blonde/Golden Ale,0,"NULL,NULL",4,South End
+46,Session 7,4.80%,52,Session IPA,IPA,0,"NULL,NULL",4,South End
+47,Cajun Stout,5.60%,21,Stout,Stout,0,"NULL,NULL",4,South End
+48,Sal's Paradise,5.30%,32,Saison,Saison/Farmhouse Ale,0,"NULL,NULL",4,South End
+49,Chocolate Covered Pretzel Stout,9.20%,32,Stout,Stout,0,"NULL,NULL",4,South End
+50,The Force,8.80%,30,RBA Belgian Tripel,Tripel,0,"NULL,NULL",4,South End
+51,Up All Night,10%,38,Breakfast Porter,Porter,0,"NULL,NULL",4,South End
+52,Good Morning Vietnam,5.00%,40,Coffee Vanilla Blonde Ale,Blonde/Golden Ale,0,"NULL,NULL",5,South End
+53,Overachiever,5.30%,0,Pale Ale,Pale Ale,0,"NULL,NULL",5,South End
+54,What He's Having,6.70%,70,IPA,IPA,0,"NULL,NULL",5,South End
+55,Over The Clouds,8.50%,68,DIPA,IPA,0,"NULL,NULL",5,South End
+56,In The Clouds,8.50%,0,DIPA,IPA,0,"NULL,NULL",5,South End
+57,Farmhouse Blanc,7.50%,0,Farmhouse Ale,Saison/Farmhouse Ale,0,"NULL,NULL",5,South End
+58,To Salinity And Beyond,4%,0,Oyster Gose,Gose ,0,"NULL,NULL",5,South End
+59,Velvet Evolver,5.80%,0,Vanilla Brown Ale,Brown Ale,0,"NULL,NULL",5,South End
+60,Blueberry Swirl It!,5.60%,0,Blueberry Vanilla Sour Ale,Sour Ale,0,"NULL,NULL",5,South End
+61,Get Sprung,6%,0,IPA,IPA,0,"NULL,NULL",5,South End
+62,Feather Light,3.80%,0,Light Berliner Style Ale,Blonde/Golden Ale,0,"NULL,NULL",6,South End
+63,Over The Edge,6.40%,65,American IPA,IPA,0,"NULL,NULL",6,South End
+64,Pre Game,4.50%,0,Session Ale,Other Ales,0,"NULL,NULL",6,South End
+65,Scratch N' Sniff,4.80%,0,Aromatic IPA,IPA,0,"NULL,NULL",6,South End
+66,Ginger Wheat,5.10%,0,Wheat,Wheat Ale,0,"NULL,NULL",6,South End
+67,Tele Porter,7.20%,0,Coffee Porter,Porter,0,"NULL,NULL",6,South End
+68,Hospitali Tea,5.40%,0,Southern Amber,Amber/Red Ale,0,"NULL,NULL",6,South End
+69,Brown Ryed Girl,6.50%,0,Indian Brown Ale,Brown Ale,0,"NULL,NULL",6,South End
+70,Venture,6.50%,0,American Stout,Stout,0,"NULL,NULL",6,South End
+71,Rasin The Roof,11.50%,0,Belgian Quad,Brown Ale,0,"NULL,NULL",6,South End
+72,Battle O Shirts,7.70%,0,Scottish Ale,Other Ales,0,"NULL,NULL",6,South End
+73,Lets Get Tropical ,5.80%,0,American IPA,IPA,0,"NULL,NULL",6,South End
+74,Krash The Kremlin,12.40%,0,Russian Imperial Stout,Stout,0,"NULL,NULL",6,South End
+75,Dirty Commie Heathen,12.40%,0,Russian Imperial Stout,Stout,0,"NULL,NULL",6,South End
+76,Rye Felicia,5.40%,0,Open Fermented Bret IPA,IPA,0,"NULL,NULL",6,South End
+77,Imperial Tele Porter,9.00%,0,Imperial Porter,Porter,0,"NULL,NULL",6,South End
+78,Bright Ass Tank Tops,4.10%,0,Barrel Aged Key Lime Gose,Gose ,0,"NULL,NULL",6,South End
+79,Queen City Common,6.90%,0,Cider,Cider,0,"NULL,NULL",7,South End
+80,Hoppin Good Tyhmeâ„¢,6.90%,0,Cider,Cider,0,"NULL,NULL",7,South End
+81,Bramblin Blackberry,7.25%,0,Cider,Cider,0,"NULL,NULL",7,South End
+82,The South End,6.25%,0,Cider,Cider,0,"NULL,NULL",7,South End
+83,Nor' Easter,6.90%,0,Cider,Cider,0,"NULL,NULL",7,South End
+84,Cherry Bobbin' Trolls,6.90%,0,Cider,Cider,0,"NULL,NULL",7,South End
+85,Sugar Creek Pale Ale,5.20%,40,Pale Ale,Pale Ale,0,"NULL,NULL",8,South End
+86,Sugar Creek White Ale,4.90%,16,White Ale,White Ale,0,"NULL,NULL",8,South End
+87,Sugar Creek Raspberry White Ale,4.40%,15,Raspberry White Ale,White Ale,0,"NULL,NULL",8,South End
+88,Sugar Creek IPA,6.70%,60,IPA,IPA,0,"NULL,NULL",8,South End
+89,BiÃ©re de Garde,6.80%,20,BiÃ©re de Garde,Saison/Farmhouse Ale,0,"NULL,NULL",8,South End
+90,Belgian Dubbel,7.60%,22,Belgian Dubbel,Dubbel,0,"NULL,NULL",8,South End
+91,Atmosphera Tripel,9.70%,18,Belgian Tripel,Tripel,0,"NULL,NULL",8,South End
+92,Sugar Creek Porter,5.70%,18,Porter,Porter,0,"NULL,NULL",8,South End
+93,Sugar Creek Pilsner,5%,40,Belgian Pilsner,Pilsner,0,"NULL,NULL",8,South End
+94,Mocha Java Porter,5.20%,16,Porter,Porter,0,"NULL,NULL",8,South End
+95,Sugar Creek Saison,6.60%,25,Saison,Saison/Farmhouse Ale,0,"NULL,NULL",8,South End
+96,Copper,4.80%,31,Altbier,Amber/Red Ale,0,"NULL,NULL",9,South End
+97,Capt Jack,4.90%,27,German Pilsner,Pilsner,0,"NULL,NULL",9,South End
+98,Southside Weiss,5.40%,16,American Pale Wheat Ale,Wheat Ale,0,"NULL,NULL",9,South End
+99,Mecklenburger,4.90%,20,Munich Helles Lager,Lager,0,"NULL,NULL",9,South End
+100,Mecktoberfest,5.40%,24,Oktoberfest,Lager,0,"NULL,NULL",9,South End
+101,Bauern Bock ,7.50%,30,Doppelbock,Doppelbock,0,"NULL,NULL",9,South End
+102,Dunkel,4.90%,28,Munich Dunkel Lager,Lager,0,"NULL,NULL",9,South End
+103,Yule Bock,7%,30,Bock,Bock,0,"NULL,NULL",9,South End
+104,Fat Boy Baltic Porter,8%,30,Porter,Porter,0,"NULL,NULL",9,South End
+105,FrÃ¼h Bock,6%,28,Helles Bock,Bock,0,"NULL,NULL",9,South End
+106,Hornet's Nest,5.40%,14,Hefeweizen,Hefeweizen,0,"NULL,NULL",9,South End
+107,Red Moon Rising,4.50%,20,American Amber Lager,Amber/Red Ale,0,"NULL,NULL",10,South End
+108,Honey Porter,6%,25,English Porter,Porter,0,"NULL,NULL",10,South End
+109,Ain't No Hop Steppin',6.50%,82,IPA,IPA,0,"NULL,NULL",10,South End
+110,Southern Bliss,5%,25,Light Golden Ale,Blonde/Golden Ale,0,"NULL,NULL",10,South End
+111,Agate Have It!,5%,20,English Brown Ale,Brown Ale,0,"NULL,NULL",10,South End
+112,King Rassafassa Ale,6.50%,35,Belgian Saison,Saison/Farmhouse Ale,0,"NULL,NULL",10,South End
+113,Helles Bane,5%,19,Munich Helles ,Lager,0,"NULL,NULL",10,South End
+114,BrÃ¼e de Tabu,6%,17,Cream Ale,Cream Ale,0,"NULL,NULL",10,South End
+115,Sweet Memories,5%,28,Stout,Stout,0,"NULL,NULL",10,South End
+116,Dream Of Wheat,4.50%,18,Wheat Beer,Wheat Ale,0,"NULL,NULL",10,South End
+117,Red Maembe,5.50%,45,Pale Ale,Pale Ale,0,"NULL,NULL",10,South End
+118,Kosch Groove,5.50%,20,Light Ale,Blonde/Golden Ale,0,"NULL,NULL",10,South End
+119,Grog,6.50%,67,IPA,IPA,0,"NULL,NULL",10,South End
+120,The Ghost Of Pumpkins Past,5%,20,Pumpkin Ale,Other Ales,0,"NULL,NULL",10,South End
+121,Harry's English Red,5%,25,British Brown Ale,Brown Ale,0,"NULL,NULL",11,South End
+122,Newtown Pippin,6.90%,0,Cider,Cider,0,"NULL,NULL",11,South End
+123,Citra-Fiable,6.50%,72,American IPA,IPA,0,"NULL,NULL",11,South End
+124,Companion,4.50%,20,Blonde Ale,Blonde/Golden Ale,0,"NULL,NULL",11,South End
+125,Cranoble ,6%,19,Fruit Beer,Specialty,0,"NULL,NULL",11,South End
+126,Infamous Grouse,9.20%,38,Barrel Aged Specialty Beer,Barrel Aged Beer,0,"NULL,NULL",11,South End
+127,LMB,5.50%,40,British Amber,Amber/Red Ale,0,"NULL,NULL",11,South End
+128,Seeker,5%,45,Session IPA,IPA,0,"NULL,NULL",11,South End
+129,Sweeney,5.50%,30,London Porter,Porter,0,"NULL,NULL",11,South End
+130,What's The Craic,5.60%,22,Irish Red Ale,Amber/Red Ale,0,"NULL,NULL",11,South End
+131,Ryme,5%,31,Rye Pale Ale,Pale Ale,0,"NULL,NULL",11,South End
+132,Cherry Miskatonic,5.50%,40,Hazy IPA,IPA,0,"NULL,NULL",11,South End
+133,Companion,4.50%,0,American Blonde Ale,Blonde/Golden Ale,0,"NULL,NULL",12,West End
+134,Femme Fatale Brown Ale,4.00%,0,English Brown Ale,Brown Ale,0,"NULL,NULL",12,West End
+135,Hunter IPA,7.50%,0,American IPA,IPA,0,"NULL,NULL",12,West End
+136,Mad Science Expermiment: Nostalgia,5.40%,0,Cream Ale,Cream Ale,0,"NULL,NULL",12,West End
+137,Mad Science Experiment: Berliner Weisse,2.50%,0,Berliner Weissbier,Wheat Ale,0,"NULL,NULL",12,West End
+138,Mad Science Experiment: Dirty Blonde,6.70%,0,American Blonde Ale,Blonde/Golden Ale,0,"NULL,NULL",12,West End
+139,Noble Saison,5.00%,0,Saison,Saison/Farmhouse Ale,0,"NULL,NULL",12,West End
+140,Seeker IPA,6.00%,0,American IPA,IPA,0,"NULL,NULL",12,West End
+141,Sweeney,5.50%,0,English Porter,Porter,0,"NULL,NULL",12,West End
+142,Ta Wit Ta Woo,4.70%,0,Witbier,Wheat Ale,0,"NULL,NULL",12,West End
+143,Vagabond,7.10%,0,Weizenbock,Wheat Ale,0,"NULL,NULL",12,West End
+144,Valkyrie Chocolatte Stout,6.00%,0,American Stout,Stout,0,"NULL,NULL",12,West End
+145,Weissen Schild,6.00%,0,Hefeweizen,Hefeweizen,0,"NULL,NULL",12,West End
+146,Alpine Lente Meadow Maibbock,6.40%,0,Helles Bock,Bock,0,"NULL,NULL",13,Noda
+147,Alpine Wiesen Oktoberfest,5.60%,0,Oktoberfest,Lager,0,"NULL,NULL",13,Noda
+148,Amber Blaze,5.60%,0,American Amber / Red Ale,Amber/Red Ale,0,"NULL,NULL",13,Noda
+149,B. MacKaye's Hepp Raisin' Scotch Ale,7.70%,0,Scotch Ale / Wee Heavy,Other Ales,0,"NULL,NULL",13,Noda
+150,Black Blaze Millk Stout,5.00%,0,Milk / Sweet Stout,Stout,0,"NULL,NULL",13,Noda
+151,Blue Blaze Altbier,5.00%,0,Altbier,Amber/Red Ale,0,"NULL,NULL",13,Noda
+152,Carolina Thread Trail,4.50%,0,American Pale Ale (APA),Pale Ale,0,"NULL,NULL",13,Noda
+153,Double Blaze Black IPA,6.10%,0,American Black Ale,Other Ales,0,"NULL,NULL",13,Noda
+154,Lean Too,9.00%,0,Doppelbock,Doppelbock,0,"NULL,NULL",13,Noda
+155,Lean Too- Rua Whiskey Barrel-Aged,9.00%,0,Dopplelbock,Doppelbock,0,"NULL,NULL",13,Noda
+156,PCT West Coast Style IPA,6.50%,0,American IPA,IPA,0,"NULL,NULL",13,Noda
+157,Pink Blazer,5.30%,0,Hefeweizen,Hefeweizen,0,"NULL,NULL",13,Noda
+158,Poplar Tent Pale Ale,5.60%,0,American Pale Ale (APA),Pale Ale,0,"NULL,NULL",13,Noda
+159,Tropical Storm IPA,6.40%,0,American IPA,IPA,0,"NULL,NULL",13,Noda
+160,Ursa Major,8.10%,0,American Double / Imperial IPA,IPA,0,"NULL,NULL",13,Noda
+161,Yellow Blazer Kolsch,5.00%,0,Kolsch,Lager,0,"NULL,NULL",13,Noda
+162,Amber Ale,5.80%,0,American Amber / Red Ale,Amber/Red Ale,0,"NULL,NULL",13,Noda
+163,Rasberry Soiree,4.20%,0,Berliner Weissbier,Wheat Ale,0,"NULL,NULL",13,Noda
+164,Blue Byway 2.0,6.70%,0,Berliner Weissbier,Wheat Ale,0,"NULL,NULL",13,Noda
+165,Thirst,6.30%,0,American IPA,IPA,0,"NULL,NULL",13,Noda
+166,Traeblod,11.00%,0,Stout - Imperial / Double,Stout,0,"NULL,NULL",13,Noda
+167,Room For Activities,7.20%,0,IPA - New England,IPA,0,"NULL,NULL",13,Noda
+168,Blurred Up,8.40%,0,IPA - Imperial / Double,IPA,0,"NULL,NULL",13,Noda
+169,Bee Fruitfull,7.60%,0,IPA - Imperial / Double,IPA,0,"NULL,NULL",13,Noda
+170,lemon Drop Bee Invasion,5.50%,0,Blonde Ale,Blonde/Golden Ale,0,"NULL,NULL",13,Noda
+171,Uber Quench'l,8.20%,0, IPA - Imperial / Double,IPA,0,"NULL,NULL",13,Noda
+172,MO-J,7.10%,0,IPA - New England,IPA,0,"NULL,NULL",13,Noda
+173,Flava In Ya Ear,8.10%,0,IPA - Imperial / Double,IPA,0,"NULL,NULL",13,Noda
+174,"Hop, Drop 'n Roll",7.20%,80,American IPA,IPA,0,"NULL,NULL",14,Noda
+175,Jam Session,5.10%,31,American Pale Ale,Pale Ale,0,"NULL,NULL",14,Noda
+176,Coco Loco,6.20%,40,Porter - American,Porter,0,"NULL,NULL",14,Noda
+177,CAVU,4.60%,18,Blonde Ale,Blonde/Golden Ale,0,"NULL,NULL",14,Noda
+178,Hop Cakes,10.25%,118,IPA - Imperial / Double,IPA,0,"NULL,NULL",14,Noda
+179,Gordgeous,6.40%,29,Pumkin / Yam Beer,Other Ales,0,"NULL,NULL",14,Noda
+180,Par 4,4%,65,IPA - India Session Ale,IPA,0,"NULL,NULL",14,Noda
+181,Ramble On Red,5%,30,Red Ale,Amber/Red Ale,0,"NULL,NULL",14,Noda
+182,Premium Roast Coffee,5%,35,Stout - American,Stout,0,"NULL,NULL",14,Noda
+183,Roaring Riot,5.50%,45,Rye Beer,Lager,0,"NULL,NULL",14,Noda
+184,Mother Shucker,6.70%,0,Stout - Oyster,Stout,0,"NULL,NULL",14,Noda
+185,Woody & Wilcox's Hop Experiment Session Ale,4.90%,0,IPA - India Session Ale,IPA,0,"NULL,NULL",14,Noda
+186,"If You Don't Know, Now You Know",6%,40,IPA - New England,IPA,0,"NULL,NULL",14,Noda
+187,Boba Brett,5.70%,5,Sour Ale,Sour Ale,0,"NULL,NULL",14,Noda
+188,Muffin Top,6.80%,50,Red Ale,Amber/Red Ale,0,"NULL,NULL",14,Noda
+189,Double Whirpool IPA,8%,50,IPA - American,IPA,0,"NULL,NULL",14,Noda
+190,Enderly Espresso Stout,8%,0,Stout - American,Stout,0,"NULL,NULL",14,Noda
+191,Sweet Tater Fluff Lager,6.30%,20,Lager - Amber,Lager,0,"NULL,NULL",14,Noda
+192,Texas Brown Ale,5%,45,Brown Ale,Brown Ale,0,"NULL,NULL",14,Noda
+193,2017 Anniversary Ale,12.30%,0,Strong Ale,Other Ales,0,"NULL,NULL",14,Noda
+194,Fifty Shades of Haze,5.70%,0,American Pale Ale,Pale Ale,0,"NULL,NULL",14,Noda
+195,My Old Friend,7%,0,Carolina Dark Sour,Sour Ale,0,"NULL,NULL",15,Noda
+196,"Susie, Gingerly",4.70%,0,Carolina Grisette,Saison/Farmhouse Ale,0,"NULL,NULL",15,Noda
+197,Who Do Ya Knead?,4%,0,American IPA,IPA,0,"NULL,NULL",15,Noda
+198,All The Things,11%,0,IPA ,IPA,0,"NULL,NULL",15,Noda
+199,A Bigh F.H.,11%,0,Imperial Brown Ale,Brown Ale,0,"NULL,NULL",15,Noda
+200,Barracuda Bill's,4.80%,0,Pilsner,Pilsner,0,"NULL,NULL",15,Noda
+201,Hard To Kickm Another Bad Habit (nitro),6%,0,Porter,Porter,0,"NULL,NULL",15,Noda
+202,Sunac Tonic,5.80%,0,Gruit,Specialty,0,"NULL,NULL",15,Noda
+203,Awesome Possum,6%,0,American IPA,IPA,0,"NULL,NULL",15,Noda
+204,Cream Of The Crop,5%,0,American Cream Ale,Cream Ale,0,"NULL,NULL",15,Noda
+205,Rocket Ride,6.90%,60,IPA,IPA,0,"NULL,NULL",16,Noda
+206,Git Yer Gun,4.90%,20,Golden Ale,Blonde/Golden Ale,0,"NULL,NULL",16,Noda
+207,Solo Flight,5.50%,24,Brown Ale,Brown Ale,0,"NULL,NULL",16,Noda
+208,Find A Way,4.90%,24,Wheat Ale,Wheat Ale,0,"NULL,NULL",16,Noda
+209,Conquer The Route,7.20%,20,Choclate Stout,Stout,0,"NULL,NULL",16,Noda
+210,Higher Ground,7.00%,65,West Coast IPA,IPA,0,"NULL,NULL",17,Noda
+211,Lazy Bird Brown Ale,5.50%,45,Brown Ale,Brown Ale,0,"NULL,NULL",17,Noda
+212,Jalepeno Pale Ale,5.50%,45,Pale Ale,Pale Ale,0,"NULL,NULL",17,Noda
+213,Pardise City Session IPA,4.80%,45,Session IPA,IPA,0,"NULL,NULL",17,Noda
+214,Doin Thyme Witbier,4.30%,15,Belgian-Style Wheat Ale,Wheat Ale,0,"NULL,NULL",17,Noda
+215,Fake Plastic Trees Hoppy Wheat,6.40%,40,Wheat Ale,Wheat Ale,0,"NULL,NULL",17,Noda
+216,Wake Up Porter,5.80%,29,Porter,Porter,0,"NULL,NULL",17,Noda
+217,MexiCalie Stout,5.80%,35,Stout,Stout,0,"NULL,NULL",17,Noda
+218,Honey Pie Double IPA,8.90%,80,IPA,IPA,0,"NULL,NULL",17,Noda
+219,Say It To My Face Double Red IPA,7.70%,70,IPA,IPA,0,"NULL,NULL",17,Noda
+220, Up On The Sun Saison,7.50%,35,Sasion,Saison/Farmhouse Ale,0,"NULL,NULL",17,Noda
+221,Eat A Peach Pale Ale,4.90%,35,Pale Ale,Pale Ale,0,"NULL,NULL",17,Noda
+222,St. Tuber Abbey Ale,6.50%,25,Ale,Other Ales,0,"NULL,NULL",17,Noda
+223,Turtles on Pterodactyls,8%,35,Barrel Aged Beer,Barrel Aged Beer,0,"NULL,NULL",17,Noda
+224,Mongeese On Monkeys,9%,45,Barrel Aged Beer,Barrel Aged Beer,0,"NULL,NULL",17,Noda
+225, Puppies On Penguins,9.30%,35,Barrel Aged Beer,Barrel Aged Beer,0,"NULL,NULL",17,Noda
+226,Bourbon Barrel Aged St. Tuber,9%,25,Barrel Aged Beer,Barrel Aged Beer,0,"NULL,NULL",17,Noda
+227,Weasels On Woodpreckers,7.50%,35,Barrel Aged Beer,Barrel Aged Beer,0,"NULL,NULL",17,Noda
+228,Carolina Sparkle Party,4%,8,Berliner Weisse,Wheat Ale,0,"NULL,NULL",18,Plaza Midwood
+229,Red Rover,5%,28,Irish Red Ale,Amber/Red Ale,0,"NULL,NULL",18,Plaza Midwood
+230,Freedom Park Pale,5.20%,40,American Pale Ale,Pale Ale,0,"NULL,NULL",18,Plaza Midwood
+231,Slainte,5.10%,40,Irish Stout,Stout,0,"NULL,NULL",18,Plaza Midwood
+232,Juicy Jay,6.30%,68,East Coast IPA,IPA,0,"NULL,NULL",18,Plaza Midwood
+233,Maple Canyon,6.10%,31,Brown Ale,Brown Ale,0,"NULL,NULL",18,Plaza Midwood
+234,Project Pils,4.80%,15,Pilsner,Pilsner,0,"NULL,NULL",18,Plaza Midwood
+235,Daylight Ninja ,5.50%,7,Farmhouse Ale,Saison/Farmhouse Ale,0,"NULL,NULL",18,Plaza Midwood
+236,Boo and Kay's Big Day,6.50%,53,NE-Style IPA,IPA,0,"NULL,NULL",18,Plaza Midwood
+237,Path To The Dark Side,5%,30,Oatmeal Stout,Stout,0,"NULL,NULL",18,Plaza Midwood
+238,The Ides of Hops,8%,45,Double IPA,IPA,0,"NULL,NULL",18,Plaza Midwood
+239,Turn Style,6%,0,IPA ,IPA,0,"NULL,NULL",19,Plaza Midwood
+240,Beer Legs,6%,0,IPA,IPA,0,"NULL,NULL",19,Plaza Midwood
+241,Finer Things,4.20%,0,Helles Lager,Lager,0,"NULL,NULL",19,Plaza Midwood
+242,Thunder Stud,8.30%,0,IPA,IPA,0,"NULL,NULL",19,Plaza Midwood
+243,Breather,5.20%,0,Pilsner,Pilsner,0,"NULL,NULL",19,Plaza Midwood
+244,Baby King,4.50%,0,Blonde Ale,Blonde/Golden Ale,0,"NULL,NULL",19,Plaza Midwood
+245,Screaming Eagle,6%,0,Porter,Porter,0,"NULL,NULL",19,Plaza Midwood
+246,Carolina Del Norte,5.50%,25,Mexican-Style Lager,Lager,0,"NULL,NULL",20,Plaza Midwood
+247,Friki Tiki,6.50%,60,Dragon Fruit IPA,IPA,0,"NULL,NULL",20,Plaza Midwood
+248,Peanut Butter Jelly Time,5.70%,10,Specialty Brown Ale,Brown Ale,0,"NULL,NULL",20,Plaza Midwood
+249,Evening Joe,5.70%,25,Coffee Blonde,Blonde/Golden Ale,0,"NULL,NULL",20,Plaza Midwood
+250,LD's,10%,30,Belgian Tripel,Tripel,0,"NULL,NULL",20,Plaza Midwood
+251,Peanut Butter Choclate Stout,5.40%,52,Specialty Stout,Stout,0,"NULL,NULL",20,Plaza Midwood
+252,Deep State,7.30%,33,Baltic Porter,Porter,0,"NULL,NULL",20,Plaza Midwood
+253,Hopness Monster,6.50%,60,IPA,IPA,0,"NULL,NULL",20,Plaza Midwood
+254,White Zombie,5.10%,7,White Ale,White Ale,0,"NULL,NULL",20,Plaza Midwood
+255,Farmer Ted,6%,7,Cream Ale,Cream Ale,0,"NULL,NULL",20,Plaza Midwood
+256,Mother Trucker,5%,51,Pale Ale,Pale Ale,0,"NULL,NULL",20,Plaza Midwood
+257,CLT,7.20%,51,IPA,IPA,0,"NULL,NULL",20,Plaza Midwood
+258,Astral Bootie Beer ,4.50%,40,Session IPA,IPA,0,"NULL,NULL",20,Plaza Midwood
+259,Brown Bear,5.20%,30,Brown Ale,Brown Ale,0,"NULL,NULL",20,Plaza Midwood
+260,Black Dome,6%,30,Stout,Stout,0,"NULL,NULL",20,Plaza Midwood
+261,Revenuers Red,5.20%,32,Red Ale,Amber/Red Ale,0,"NULL,NULL",20,Plaza Midwood
+262,Ted Light Lime ,4.50%,7,Lime Ale,Specialty,0,"NULL,NULL",20,Plaza Midwood
+263, Eno Pilsner,4.90%,39,Pilsner,Pilsner,0,"NULL,NULL",20,Plaza Midwood
+264,Hooligan,8%,45,Scotch Ale,Other Ales,0,"NULL,NULL",20,Plaza Midwood
+265,King Coconut,5.50%,30,Porter,Porter,0,"NULL,NULL",20,Plaza Midwood
+266,King Don's,5.50%,5,Pumkin Ale,Other Ales,0,"NULL,NULL",20,Plaza Midwood

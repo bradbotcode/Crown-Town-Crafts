@@ -19,22 +19,42 @@ module.exports = function(app) {
     });
   });
   // Vague Search
-  app.get("/api/search/:filters", function(req, res) {
-    let paramArr = req.params.filters.split("&");
-    let type;
-    let hood;
+  app.get("/api/search", function(req, res) {
+    console.log(req.query);
+    let type = req.query.type;
+    let brewID = req.query.brewery;
+    let hood = req.query.hood;
 
-    for(let i=0; i < paramArr.length; i++) {
-      if(paramArr[i].indexOf("type=")) {
-        let typeArr = paramArr[i].split("=");
-        type = typeArr[1]
-        console.log(typeArr[1]);
+    var results = [];
+
+    // sequelize logic
+
+    db.Brewery.findAll({
+      where: {
+        id: brewID
       }
-      if(paramArr[i].indexOf("hood=")) {
-        let hoodArr = paramArr[i].split("="); 
-        hood = hood[1];
-        console.log(hood);
-      }
-    }
+    }).then(function(brewResults) {
+      results = results.concat(brewResults);
+      db.Beer.findAll({
+        where: {
+          simple_style: type,
+          BreweryId: brewID
+        }
+      }).then(function(typeResults) {
+        results = results.concat(typeResults);
+        res.json(results);
+      });
+    });
   });
+};
+
+var findAll = function(model, colName1, colVal1, colName2, colVal2) {
+  db.model
+    .findAll({
+      where: {
+        colName1: colVal1,
+        colName2: colVal2
+      }
+    })
+    .then(function(results) {});
 };

@@ -13,6 +13,8 @@ $(".indexSubmit").on("click", function (event) {
     $.get("/api/beerbybrewery/" + query, function (data) {});
   } else if (brewery === null) {
     $.get("/api/beerbyhood/" + query, function (data) {});
+  } else if (beer === null && brewery === null) {
+    $.get("/api/brewerybyhood/" + query, function (data) {});
   }
 
 });

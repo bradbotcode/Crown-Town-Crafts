@@ -1,3 +1,6 @@
+/*
+Replaced with function on index.html
+
 $(".indexSubmit").on("click", function(event){
     event.preventDefault();
     var categories = {
@@ -7,7 +10,7 @@ $(".indexSubmit").on("click", function(event){
     }
     console.log(categories);
 })
-
+*/
 jQuery(document).ready(function ($) {
     var $form_modal = $('.cd-user-modal'),
         $form_login = $form_modal.find('#cd-login'),

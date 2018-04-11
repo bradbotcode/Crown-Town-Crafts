@@ -1,29 +1,34 @@
 module.exports = function (sequelize, DataTypes) {
   var Beer = sequelize.define("Beer", {
+
     beer_name: {
       type: DataTypes.STRING,
       allowNull: false
     },
     abv: {
-      type: DataTypes.FLOAT,
-      allowNull: false
+      type: DataTypes.STRING,
     },
     ibu: {
-      type: DataTypes.INTEGER,
-      allowNull: true
+      type: DataTypes.STRING
     },
     style: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    cheers: {
-      type: DataTypes.INTEGER,
-      defaultValue: 0,
+    simple_style: {
+      type: DataTypes.STRING,
       allowNull: false
     },
+    cheers: {
+      type: DataTypes.STRING,
+      defaultValue: 0
+    },
     rating: {
-      type: DataTypes.INTEGER
+      type: DataTypes.STRING,
+      defaultValue: null
     }
+  }, {
+    timestamps: false
   });
 
   Beer.associate = function (models) {
@@ -33,5 +38,6 @@ module.exports = function (sequelize, DataTypes) {
       }
     });
   };
+
   return Beer;
 };

@@ -34,8 +34,9 @@ module.exports = function (sequelize, DataTypes) {
     zip: {
       type: DataTypes.INTEGER
     }
+  },{
+    timestamps: false
   });
-
   Brewery.associate = function (models) {
     // Associating Breweries with Beers
     // If a Brewery is deleted, also delete any associated Beers
@@ -43,6 +44,5 @@ module.exports = function (sequelize, DataTypes) {
       onDelete: "cascade"
     });
   };
-
   return Brewery;
 };

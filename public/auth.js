@@ -1,4 +1,3 @@
-// Initialize Firebase
 var config = {
   apiKey: "AIzaSyCiaRXJar4m3jcAEM8P25YuS4ccFnsa6Io",
   authDomain: "brewery-app-306b6.firebaseapp.com",
@@ -8,31 +7,27 @@ var config = {
   messagingSenderId: "1082909881233"
 };
 
+// initialize Firebase
 firebase.initializeApp(config);
-var database = firebase.database();
 var user = null;
-var uid = user.uid;
-firebase.auth().onAuthStateChanged(function(firebUser) {
+
+firebase.auth().onAuthStateChanged(function (firebUser) {
   console.log("authstatechanged");
   user = firebUser;
 
   if (user) {
-    //show or hide what you want
-    //ajax.post to api/newUser/:uid
-    //from there on server side, api/newUser/:uid will look into db table for users, check for that UID. If its there, do nothing with post. it it isn't add them as new user.
-    $.post("api/newUser/" + uid, function(data) {
+    $.post("/api/newUser/" + user.uid, function (data) {
       console.log("created new user" + data);
     });
+
+    //we can also choose to show or hide dom items based on authstate
   } else {
     //show or hide what you want
   }
 });
 
-//Create a new account by passing the new user's email address and password to createUserWithEmailAndPassword:
-
-//If the new account was created, the user is signed in automatically.
-//Users remain signed in, even when browser closes.
-$(".signUp").click(function(event) {
+//create a new account with signup.
+$(".signUp").click(function (event) {
   event.preventDefault();
 
   var email = $("#signUpEmail")
@@ -45,17 +40,11 @@ $(".signUp").click(function(event) {
   firebase
     .auth()
     .createUserWithEmailAndPassword(email, password)
-    .then(function(user) {
+    .then(function (user) {
       var uid = user.uid;
-
-      firebase
-        .database()
-        .ref("/" + uid)
-        .set(userInfo);
-      console.log(userInfo);
     })
-    .catch(function(error) {
-      // Handle Errors here.
+    .catch(function (error) {
+      // handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
       if (errorCode === "auth/email-already-in-use") {
@@ -72,13 +61,8 @@ $(".signUp").click(function(event) {
     });
 });
 
-//When a user signs in to the app, pass the user's email address and password to signInWithEmailAndPassword:
-$("#signInEmail").blur(function() {
-  $(".signIn").attr("data-close", "");
-  console.log("blur");
-});
-
-$(".signIn").click(function(event) {
+//firebase signIn method
+$(".signIn").click(function (event) {
   event.preventDefault();
 
   var email = $("#signInEmail").val();
@@ -87,12 +71,11 @@ $(".signIn").click(function(event) {
   firebase
     .auth()
     .signInWithEmailAndPassword(email, password)
-    .then(function(user) {
-      //var uid = user.uid;
-      $("#signInEmail").removeClass("signInEmail");
+    .then(function (user) {
+      var uid = user.uid;
     })
-    .catch(function(error) {
-      // Handle Errors here.
+    .catch(function (error) {
+      // handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
 
@@ -100,17 +83,14 @@ $(".signIn").click(function(event) {
         console.log("wrong password");
       } else if (errorCode === "auth/invalid-email") {
         console.log("val error");
-        $("#signInEmail").addClass("valStatus");
-        $(".signIn").removeAttr("data-close");
       } else if (errorCode === "auth/user-not-found") {
         console.log("not valid user");
-      } else {
-      }
+      } else {}
     });
 });
 
 //sign-out click function
-$(".signOut").click(function(event) {
+$(".signOut").click(function (event) {
   event.preventDefault();
   console.log("hello");
   firebase.auth().signOut();

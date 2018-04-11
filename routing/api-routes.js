@@ -24,7 +24,8 @@ module.exports = function(app) {
     console.log(req.params.filters);
     let paramArr = req.params.filters.split("&");
     let type;
-    let brewery;
+    let brewName;
+    let results;
 
     for (let i = 0; i < paramArr.length; i++) {
       if (paramArr[i].indexOf("type=")) {
@@ -34,9 +35,28 @@ module.exports = function(app) {
       }
       if (paramArr[i].indexOf("brewery=")) {
         let breweryArr = paramArr[i].split("=");
-        brewery = breweryArr[1];
-        console.log(brewery);
+        brewName = breweryArr[1].replace("%20", " ");
+        console.log(brewName);
       }
     }
+    // sequelize logic
+  
+      db.Brewery.findAll("Brewery", {
+        where:{
+          brewery_name: brewName
+        } 
+      }).then(function(brewResults) {
+        
+        results += brewResults;
+        db.Beer.findAll("Beer" ,{
+          where: {
+            style: type
+          }
+        }).then(function(typeResults) {
+          results += typeResults;
+          res.json(results);
+        });
+      });
+    
   });
 };

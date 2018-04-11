@@ -19,44 +19,42 @@ module.exports = function(app) {
     });
   });
   // Vague Search
-  app.get("/api/search/:filters", function(req, res) {
-    console.log(req.params);
-    console.log(req.params.filters);
-    let paramArr = req.params.filters.split("&");
-    let type;
-    let brewName;
-    let results;
+  app.get("/api/search", function(req, res) {
+    console.log(req.query);
+    let type = req.query.type;
+    let brewID = req.query.brewery;
+    let hood = req.query.hood;
 
-    for (let i = 0; i < paramArr.length; i++) {
-      if (paramArr[i].indexOf("type=")) {
-        let typeArr = paramArr[i].split("=");
-        type = typeArr[1];
-        console.log(type);
-      }
-      if (paramArr[i].indexOf("brewery=")) {
-        let breweryArr = paramArr[i].split("=");
-        brewName = breweryArr[1].replace("%20", " ");
-        console.log(brewName);
-      }
-    }
+    var results = [];
+
     // sequelize logic
-  
-      db.Brewery.findAll("Brewery", {
-        where:{
-          brewery_name: brewName
-        } 
-      }).then(function(brewResults) {
-        
-        results += brewResults;
-        db.Beer.findAll("Beer" ,{
-          where: {
-            style: type
-          }
-        }).then(function(typeResults) {
-          results += typeResults;
-          res.json(results);
-        });
+
+    db.Brewery.findAll({
+      where: {
+        id: brewID
+      }
+    }).then(function(brewResults) {
+      results = results.concat(brewResults);
+      db.Beer.findAll({
+        where: {
+          simple_style: type,
+          BreweryId: brewID
+        }
+      }).then(function(typeResults) {
+        results = results.concat(typeResults);
+        res.json(results);
       });
-    
+    });
   });
+};
+
+var findAll = function(model, colName1, colVal1, colName2, colVal2) {
+  db.model
+    .findAll({
+      where: {
+        colName1: colVal1,
+        colName2: colVal2
+      }
+    })
+    .then(function(results) {});
 };

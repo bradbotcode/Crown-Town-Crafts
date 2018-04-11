@@ -1,18 +1,10 @@
 $(".indexSubmit").on("click", function(event) {
   //event.preventDefault();
 
-  var type = $("#type")
-    .val()
-    .trim();
-  //type = type.replace(/\s/g, "");
-  console.log(type);
-  var neighborhood = $("#neighborhood").val();
-  //neighborhood = neighborhood.replace(/\s/g, "");
-  console.log(neighborhood);
-  var brewery = $("#brewery")
-    .val()
-    .trim();
-  var query = "&type=" + type + "&brewery=" + brewery;
+  var type = $("#type").val();
+  var hood = $("#neighborhood").val();
+  var brewery = $("#brewery").val();
+  var query = "?type=" + type + "&brewery=" + brewery;
 
   console.log(query);
 

@@ -26,6 +26,9 @@ module.exports = function (sequelize, DataTypes) {
     rating: {
       type: DataTypes.STRING,
       defaultValue: null
+    },
+    hood: {
+      type: DataTypes.STRING,
     }
   }, {
     timestamps: false
@@ -38,6 +41,5 @@ module.exports = function (sequelize, DataTypes) {
       }
     });
   };
-
   return Beer;
 };

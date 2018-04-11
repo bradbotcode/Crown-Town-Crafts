@@ -20,20 +20,22 @@ module.exports = function(app) {
   });
   // Vague Search
   app.get("/api/search/:filters", function(req, res) {
+    console.log(req.params);
+    console.log(req.params.filters);
     let paramArr = req.params.filters.split("&");
     let type;
-    let hood;
+    let brewery;
 
-    for(let i=0; i < paramArr.length; i++) {
-      if(paramArr[i].indexOf("type=")) {
+    for (let i = 0; i < paramArr.length; i++) {
+      if (paramArr[i].indexOf("type=")) {
         let typeArr = paramArr[i].split("=");
-        type = typeArr[1]
-        console.log(typeArr[1]);
+        type = typeArr[1];
+        console.log(type);
       }
-      if(paramArr[i].indexOf("hood=")) {
-        let hoodArr = paramArr[i].split("="); 
-        hood = hood[1];
-        console.log(hood);
+      if (paramArr[i].indexOf("brewery=")) {
+        let breweryArr = paramArr[i].split("=");
+        brewery = breweryArr[1];
+        console.log(brewery);
       }
     }
   });

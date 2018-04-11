@@ -30,7 +30,7 @@ module.exports = function(app) {
     for (let i = 0; i < paramArr.length; i++) {
       if (paramArr[i].indexOf("type=")) {
         let typeArr = paramArr[i].split("=");
-        type = typeArr[1];
+        type = typeArr[1].replace("%20", " ");
         console.log(type);
       }
       if (paramArr[i].indexOf("brewery=")) {

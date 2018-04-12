@@ -30,13 +30,15 @@ router.post("/api/newUser/:uid", function (req, res) {
 });
 
 router.post("/api/addbeer", function(req, res) {
+    console.log(req.body)
+    var brewId = parseInt(req.body.brewery);
     db.Beer.create({
-        beer_name: req.beer_name,
-        abv: req.abv,
-        ibu: req.ibu,
-        style: req.style,
-        simple_style: req.simpleStyle,
-        breweryId: req.brewery
+        beer_name: req.body.beer_name,
+        abv: req.body.abv,
+        ibu: req.body.ibu,
+        style: req.body.style,
+        simple_style: req.body.simple_style,
+        breweryId: req.body.brewery
     }).then(function(results) {
         res.json(results);
     })

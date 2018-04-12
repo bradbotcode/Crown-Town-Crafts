@@ -47,12 +47,14 @@ jQuery(document).ready(function($) {
       ".cd-form-bottom-message a"
     ),
     $main_nav = $(".main-nav");
+    $modalOpen = $(".modalClick");
+
 
   //open modal
-  $main_nav.on("click", function(event) {
+  $modalOpen.on("click", function(event) {
     if ($(event.target).is($main_nav)) {
       // on mobile open the submenu
-      $(this)
+      $(main_nav)
         .children("ul")
         .toggleClass("is-visible");
     } else {
@@ -181,6 +183,4 @@ jQuery.fn.putCursorAtEnd = function() {
       $(this).val($(this).val());
     }
   });
-  $("#signUpPassword").text("");
-  $("#signUpEmail").text("");
 };

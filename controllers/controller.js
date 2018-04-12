@@ -81,7 +81,7 @@ router.get("/api/type", function (req, res) {
 
 router.get("/api/hood", function (req, res) {
     console.log(req.query);
-    var hood = req.query.hood;
+    let hood = req.query.hood;
     let results = [];
 
     // sequelize logic

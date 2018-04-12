@@ -284,10 +284,41 @@ textarea::-ms-clear {
 
 /* Admin Page */
 
+.adminForm {
+  display: block;
+  margin: auto;
+  width: 50%
+}
+
 .adminForm label,
 .adminForm input,
 .adminForm select {
   display: block;
+}
+
+.adminForm input,
+.adminForm select {
+  display: block;
+  width:100%;
+  background-color: #c6c6c6;
+  border: 1.5px solid #232323;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.adminForm label {
+  color: #c0b283;
+}
+
+.adminForm button {
+  display: block;
+  width:100%;
+  background-color: #c0b283;
+  border: 1.5px solid #918765;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
 /* Modal */

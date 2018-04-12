@@ -1,14 +1,14 @@
-// Dependencies
+// dependencies
 var express = require("express");
 var bodyParser = require("body-parser");
 var exphbs = require("express-handlebars");
 
-// Sets up the Express App
+// sets up the Express App
 // =============================================================
 var app = express();
 var PORT = process.env.PORT || 8080;
 
-// Requiring our models for syncing
+// requiring our models for syncing
 var db = require("./models");
 
 app.use(
@@ -21,10 +21,6 @@ app.use(bodyParser.json());
 // static directory
 app.use(express.static("./public"));
 
-// require routes
-require("./routing/api-routes.js")(app);
-require("./routing/html-routes.js")(app);
-
 //handlebars engine
 app.engine(
   "handlebars",
@@ -34,14 +30,17 @@ app.engine(
 );
 app.set("view engine", "handlebars");
 
-// Syncing our sequelize models and then starting our Express app
+var routes = require("./controllers/controller.js");
+app.use("/", routes);
+
+// syncing our sequelize models and then starting our Express app
 // =============================================================
 db.sequelize
   .sync({
     force: false
   })
-  .then(function() {
-    app.listen(PORT, function() {
+  .then(function () {
+    app.listen(PORT, function () {
       console.log("App listening on PORT " + PORT);
     });
   });

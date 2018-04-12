@@ -16,11 +16,15 @@ $(".indexSubmit").on("click", function (event) {
     $.get("/api/hood/" + query, function (data) {});
   } else if (type === null && hood === null) {
     $.get("/api/brewery" + query, function (data) {});
-  } else if (brewery === null || (hood && type && brewery ))  {
-      query = "?type=" + type + "&brewery=null" + "&hood=" + hood;
+  } else if (brewery === null || (hood && type && brewery)) {
+    query = "?type=" + type + "&brewery=null" + "&hood=" + hood;
     $.get("/api/typeAndhood/" + query, function (data) {});
   }
 
+});
+
+$(".signUp").on("click", function () {
+  window.location.replace("/admin.html");
 });
 
 jQuery(document).ready(function ($) {

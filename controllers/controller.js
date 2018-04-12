@@ -1,4 +1,5 @@
 var express = require("express");
+var path = require("path");
 var db = require("../models");
 
 //instance of router
@@ -139,4 +140,8 @@ router.get("/api/typeAndhood", function (req, res) {
         });
     });
 });
+
+router.get("/admin", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/admin.html"));
+})
 module.exports = router;

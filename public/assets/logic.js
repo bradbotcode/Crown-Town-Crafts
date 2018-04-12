@@ -1,3 +1,4 @@
+jQuery.ajaxSettings.traditional = true;
 $(".indexSubmit").on("click", function(event) {
   var type = $("#type").val();
   var hood = $("#neighborhood").val();

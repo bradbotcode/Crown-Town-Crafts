@@ -1,5 +1,4 @@
 $(".indexSubmit").on("click", function (event) {
-  //event.preventDefault();
 
   var type = $("#type").val();
   var hood = $("#neighborhood").val();
@@ -9,12 +8,16 @@ $(".indexSubmit").on("click", function (event) {
 
   console.log(query);
 
-  if (hood === null) {
-    $.get("/api/beerbybrewery/" + query, function (data) {});
+  if (hood === null && type !== null && brewery !== null) {
+    $.get("/api/typeAndbrewery/" + query, function (data) {});
+  } else if (hood === null && brewery === null) {
+    $.get("/api/type" + query, function (data) {});
+  } else if (type === null && brewery === null) {
+    $.get("/api/hood/" + query, function (data) {});
+  } else if (type === null && hood === null) {
+    $.get("/api/brewery" + query, function (data) {});
   } else if (brewery === null) {
-    $.get("/api/beerbyhood/" + query, function (data) {});
-  } else if (beer === null && brewery === null) {
-    $.get("/api/brewerybyhood/" + query, function (data) {});
+    $.get("/api/typeAndhood/" + query, function (data) {});
   }
 
 });

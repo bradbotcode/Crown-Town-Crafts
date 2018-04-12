@@ -28,7 +28,7 @@ router.post("/api/newUser/:uid", function (req, res) {
     });
 });
 
-router.get("/api/beerbybrewery", function (req, res) {
+router.get("/api/typeAndbrewery", function (req, res) {
     console.log(req.query);
     let type = req.query.type;
     let brewID = req.query.brewery;
@@ -54,7 +54,7 @@ router.get("/api/beerbybrewery", function (req, res) {
     });
 });
 
-router.get("/api/beerbyhood", function (req, res) {
+router.get("/api/typeAndhood", function (req, res) {
     console.log(req.query);
     let type = req.query.type;
     // let brewID = req.query.brewery;
@@ -81,7 +81,7 @@ router.get("/api/beerbyhood", function (req, res) {
     });
 });
 
-router.get("/api/brewerybyhood", function (req, res) {
+router.get("/api/hood", function (req, res) {
     console.log(req.query);
     let type = req.query.type;
     let brewID = req.query.brewery;
@@ -100,4 +100,48 @@ router.get("/api/brewerybyhood", function (req, res) {
     });
 });
 
+router.get("/api/brewery", function (req, res) {
+    console.log(req.query);
+    var type = req.query.type;
+    let brewID = req.query.brewery;
+    var hood = req.query.hood;
+    console.log(req.query.brewID);
+    let results = [];
+
+    // sequelize logic
+    db.Brewery.findAll({
+        where: {
+            id: brewID
+        }
+    }).then(function (brewResults) {
+        results = results.concat(brewResults);
+        db.Beer.findAll({
+            where: {
+                BreweryId: brewID
+            }
+        }).then(function (typeResults) {
+            results = results.concat(typeResults);
+            res.json(results);
+        });
+    });
+});
+
+router.get("/api/type", function (req, res) {
+    console.log(req.query);
+    let type = req.query.type;
+    let brewID = req.query.brewery;
+    var hood = req.query.hood;
+    console.log(req.query.type);
+    //let results = [];
+
+    // sequelize logic
+    db.Beer.findAll({
+        where: {
+            simple_style: type
+        }
+    }).then(function (brewResults) {
+        console.log(brewResults)
+        res.json(brewResults);
+    });
+});
 module.exports = router;

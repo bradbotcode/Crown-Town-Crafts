@@ -19,13 +19,9 @@ firebase.auth().onAuthStateChanged(function(firebUser) {
     $.post("/api/newUser/" + user.uid, function(data) {
       console.log("created new user" + data);
     });
-<<<<<<< Updated upstream
 
     $(".cd-signin").hide();
 
-=======
-    
->>>>>>> Stashed changes
     //we can also choose to show or hide dom items based on authstate
   } else {
     //show or hide what you want

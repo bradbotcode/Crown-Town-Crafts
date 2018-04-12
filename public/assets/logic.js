@@ -23,6 +23,14 @@ $(".indexSubmit").on("click", function (event) {
 
 });
 
+$(".addBeer").on("click", function(event) {
+  $.post("/api/addbeer",
+    $(".adminForm").serialize(),
+    function(data) {
+      console.log(data);
+  })
+})
+
 jQuery(document).ready(function ($) {
   var $form_modal = $(".cd-user-modal"),
     $form_login = $form_modal.find("#cd-login"),

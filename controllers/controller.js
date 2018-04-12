@@ -81,4 +81,23 @@ router.get("/api/beerbyhood", function (req, res) {
     });
 });
 
+router.get("/api/brewerybyhood", function (req, res) {
+    console.log(req.query);
+    let type = req.query.type;
+    let brewID = req.query.brewery;
+    var hood = req.query.hood;
+    console.log(req.query.hood);
+    //let results = [];
+
+    // sequelize logic
+    db.Brewery.findAll({
+        where: {
+            neighborhood: hood
+        }
+    }).then(function (brewResults) {
+        console.log(brewResults)
+        res.json(brewResults);
+    });
+});
+
 module.exports = router;

@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "root",
-    "password": "Soccer8900",
+    "password": "root",
     "database": "ctc_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "Soccer8900",
+    "password": "root",
     "database": "ctc_db",
     "host": "127.0.0.1",
     "dialect": "mysql"

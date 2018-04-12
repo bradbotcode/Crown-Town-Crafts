@@ -47,7 +47,6 @@ router.post("/api/addbeer", function(req, res) {
 router.get("/api/brewery", function(req, res) {
   console.log(req.query);
   let brewID = req.query.brewery;
-  results = [];
 
   // sequelize logic
   db.Brewery.findAll({
@@ -84,7 +83,6 @@ router.get("/api/type", function(req, res) {
 router.get("/api/hood", function(req, res) {
   console.log(req.query);
   let hood = req.query.hood;
-  let results = [];
 
   // sequelize logic
   db.Brewery.findAll({
@@ -109,7 +107,6 @@ router.get("/api/typeAndbrewery", function(req, res) {
     },
     include: [{ model: db.Beer, where: { simple_style: type } }]
   }).then(function(typeResults) {
-    //results = results.concat(typeResults);
     res.json(typeResults);
   });
 });

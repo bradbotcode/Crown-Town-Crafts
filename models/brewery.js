@@ -32,17 +32,11 @@ module.exports = function (sequelize, DataTypes) {
       allowNull: false
     },
     zip: {
-      type: DataTypes.INTEGER
+      type: DataTypes.STRING
     }
   },{
     timestamps: false
   });
-  Brewery.associate = function (models) {
-    // Associating Breweries with Beers
-    // If a Brewery is deleted, also delete any associated Beers
-    Brewery.hasMany(models.Beer, {
-      onDelete: "cascade"
-    });
-  };
+
   return Brewery;
 };

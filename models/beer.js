@@ -29,17 +29,14 @@ module.exports = function (sequelize, DataTypes) {
     },
     hood: {
       type: DataTypes.STRING,
+    },
+    breweryId: {
+      type: DataTypes.STRING
     }
   }, {
     timestamps: false
   });
 
-  Beer.associate = function (models) {
-    Beer.belongsTo(models.Brewery, {
-      foreignKey: {
-        allowNull: false
-      }
-    });
-  };
+
   return Beer;
 };

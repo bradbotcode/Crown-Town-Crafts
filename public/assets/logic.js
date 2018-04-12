@@ -1,5 +1,4 @@
 $(".indexSubmit").on("click", function (event) {
-  //event.preventDefault();
 
   var type = $("#type").val();
   var hood = $("#neighborhood").val();
@@ -22,25 +21,6 @@ $(".indexSubmit").on("click", function (event) {
   }
 
 });
-
-/*$(".addBeer").on("click", function (event) {
-  var beer_name = $("#beer_name").val();
-  var ibu = $("#ibu").val();
-  var abv = $("#abv").val();
-  var style = $("#style").val();
-  var simpleStyle = $("#simpleStyle").val();
-  var brewery = $("#brewery ").val();
-
-  var query = "?beer_name=" + beer_name + "&ibu=" + ibu + "&abv=" + abv + "&style=" + style + "&simpleStyle=" + abv;
-
-  console.log(beer_name);
-  console.log(ibu);
-  console.log(abv);
-  console.log(style);
-  console.log(simpleStyle);
-  console.log(brewery);
-
-})*/
 
 jQuery(document).ready(function ($) {
   var $form_modal = $(".cd-user-modal"),

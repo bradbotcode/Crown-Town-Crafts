@@ -29,6 +29,21 @@ router.post("/api/newUser/:uid", function (req, res) {
     });
 });
 
+router.post("/api/addbeer", function(req, res) {
+    console.log(req.body)
+    var brewId = parseInt(req.body.brewery);
+    db.Beer.create({
+        beer_name: req.body.beer_name,
+        abv: req.body.abv,
+        ibu: req.body.ibu,
+        style: req.body.style,
+        simple_style: req.body.simple_style,
+        breweryId: req.body.brewery
+    }).then(function(results) {
+        res.json(results);
+    })
+})
+
 router.get("/api/brewery", function (req, res) {
     console.log(req.query);
     let brewID = req.query.brewery;

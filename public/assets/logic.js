@@ -23,6 +23,13 @@ $(".indexSubmit").on("click", function (event) {
 
 });
 
+$(".addBeer").on("click", function(event) {
+  $.post("/api/addbeer",
+    $(".adminForm").serialize(),
+    function(data) {
+      console.log(data);
+  })
+})
 $(".signUp").on("click", function () {
   window.location.replace("/admin.html");
 });

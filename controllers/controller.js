@@ -38,7 +38,8 @@ router.post("/api/addbeer", function(req, res) {
     ibu: req.body.ibu,
     style: req.body.style,
     simple_style: req.body.simple_style,
-    breweryId: req.body.brewery
+    hood: req.body.hood,
+    BreweryId: req.body.brewery
   }).then(function(results) {
     res.json(results);
   });

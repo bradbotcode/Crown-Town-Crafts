@@ -28,11 +28,72 @@ router.post("/api/newUser/:uid", function (req, res) {
     });
 });
 
+router.get("/api/brewery", function (req, res) {
+    console.log(req.query);
+    let brewID = req.query.brewery;
+    results = [];
+
+    // sequelize logic
+    db.Brewery.findAll({
+        where: {
+            id: brewID
+        }
+    }).then(function (brewResults) {
+        results = results.concat(brewResults);
+        db.Beer.findAll({
+            where: {
+                BreweryId: brewID
+            }
+        }).then(function (typeResults) {
+            results = results.concat(typeResults);
+            res.json(results);
+        });
+    });
+});
+
+router.get("/api/type", function (req, res) {
+    console.log(req.query);
+    let type = req.query.type;
+
+    // sequelize logic
+    db.Beer.findAll({
+        where: {
+            simple_style: type
+        }
+    }).then(function (brewResults) {
+        console.log(brewResults)
+        res.json(brewResults);
+    });
+});
+
+router.get("/api/hood", function (req, res) {
+    console.log(req.query);
+    var hood = req.query.hood;
+    let results = [];
+
+    // sequelize logic
+    db.Brewery.findAll({
+        where: {
+            neighborhood: hood
+        }
+    }).then(function (brewResults) {
+        results = results.concat(brewResults);
+        db.Beer.findAll({
+            where: {
+                hood: hood
+            }
+        }).then(function (typeResults) {
+            results = results.concat(typeResults);
+            res.json(results);
+        });
+    });
+});
+
+
 router.get("/api/typeAndbrewery", function (req, res) {
     console.log(req.query);
     let type = req.query.type;
     let brewID = req.query.brewery;
-    // let hood = req.query.hood;
     let results = [];
 
     // sequelize logic
@@ -57,9 +118,7 @@ router.get("/api/typeAndbrewery", function (req, res) {
 router.get("/api/typeAndhood", function (req, res) {
     console.log(req.query);
     let type = req.query.type;
-    // let brewID = req.query.brewery;
     let hood = req.query.hood;
-    console.log(req.query.hood);
     let results = [];
 
     // sequelize logic
@@ -78,70 +137,6 @@ router.get("/api/typeAndhood", function (req, res) {
             results = results.concat(typeResults);
             res.json(results);
         });
-    });
-});
-
-router.get("/api/hood", function (req, res) {
-    console.log(req.query);
-    let type = req.query.type;
-    let brewID = req.query.brewery;
-    var hood = req.query.hood;
-    console.log(req.query.hood);
-    //let results = [];
-
-    // sequelize logic
-    db.Brewery.findAll({
-        where: {
-            neighborhood: hood
-        }
-    }).then(function (brewResults) {
-        console.log(brewResults)
-        res.json(brewResults);
-    });
-});
-
-router.get("/api/brewery", function (req, res) {
-    console.log(req.query);
-    var type = req.query.type;
-    let brewID = req.query.brewery;
-    var hood = req.query.hood;
-    console.log(req.query.brewID);
-    let results = [];
-
-    // sequelize logic
-    db.Brewery.findAll({
-        where: {
-            id: brewID
-        }
-    }).then(function (brewResults) {
-        results = results.concat(brewResults);
-        db.Beer.findAll({
-            where: {
-                BreweryId: brewID
-            }
-        }).then(function (typeResults) {
-            results = results.concat(typeResults);
-            res.json(results);
-        });
-    });
-});
-
-router.get("/api/type", function (req, res) {
-    console.log(req.query);
-    let type = req.query.type;
-    let brewID = req.query.brewery;
-    var hood = req.query.hood;
-    console.log(req.query.type);
-    //let results = [];
-
-    // sequelize logic
-    db.Beer.findAll({
-        where: {
-            simple_style: type
-        }
-    }).then(function (brewResults) {
-        console.log(brewResults)
-        res.json(brewResults);
     });
 });
 module.exports = router;

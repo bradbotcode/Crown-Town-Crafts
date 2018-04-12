@@ -81,6 +81,13 @@ textarea::-ms-clear {
     display: table;
     clear: both;
   }
+
+  #ctcText {
+    margin-top: 50px;
+    color: #c0b283;
+    font-size: 1.2rem;
+    font-family:Geneva, Verdana, sans-serif;
+  }
   .main-nav {
     float: right;
     margin-right: 5%;
@@ -228,10 +235,10 @@ textarea::-ms-clear {
     margin-top: 10px;
     padding: 10px;
     font-size: 1.2rem;
-    font-weight: 600;
-    border: 1px solid #984b43;
-    background-color: #984b43;
-    color: #373737;
+    font-weight: 500;
+    border: 1px solid #444;
+    background-color: #444;
+    color: #c0b283;
 }
 
 .indexSelects {
@@ -244,10 +251,10 @@ textarea::-ms-clear {
     padding-left: 24px;
     direction: ltr;
     font-size: 1.2rem;
-    font-weight: 600;
-    border: 3px solid #984b43;
+    font-weight: 500;
+    border: 2px solid #c0b283;
     background-color: transparent;
-    color: #984b43
+    color: #c0b283;
 }
 
 /* Beer Page */
@@ -673,6 +680,12 @@ textarea::-ms-clear {
         background: #c0b283;
         border: none;
         color: #373737;
+      }
+      .main-nav a.cd-link {
+        padding: 0.6em .2em;
+        background: transparent;
+        border: none;
+        color: #c0b283;
       }
       .cd-close-form {
         display: none;

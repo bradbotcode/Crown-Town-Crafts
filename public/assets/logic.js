@@ -9,15 +9,38 @@ $(".indexSubmit").on("click", function (event) {
 
   console.log(query);
 
-  if (hood === null) {
-    $.get("/api/beerbybrewery/" + query, function (data) {});
+  if (hood === null && type !== null && brewery !== null) {
+    $.get("/api/typeAndbrewery/" + query, function (data) {});
+  } else if (hood === null && brewery === null) {
+    $.get("/api/type" + query, function (data) {});
+  } else if (type === null && brewery === null) {
+    $.get("/api/hood/" + query, function (data) {});
+  } else if (type === null && hood === null) {
+    $.get("/api/brewery" + query, function (data) {});
   } else if (brewery === null) {
-    $.get("/api/beerbyhood/" + query, function (data) {});
-  } else if (beer === null && brewery === null) {
-    $.get("/api/brewerybyhood/" + query, function (data) {});
+    $.get("/api/typeAndhood/" + query, function (data) {});
   }
 
 });
+
+/*$(".addBeer").on("click", function (event) {
+  var beer_name = $("#beer_name").val();
+  var ibu = $("#ibu").val();
+  var abv = $("#abv").val();
+  var style = $("#style").val();
+  var simpleStyle = $("#simpleStyle").val();
+  var brewery = $("#brewery ").val();
+
+  var query = "?beer_name=" + beer_name + "&ibu=" + ibu + "&abv=" + abv + "&style=" + style + "&simpleStyle=" + abv;
+
+  console.log(beer_name);
+  console.log(ibu);
+  console.log(abv);
+  console.log(style);
+  console.log(simpleStyle);
+  console.log(brewery);
+
+})*/
 
 jQuery(document).ready(function ($) {
   var $form_modal = $(".cd-user-modal"),

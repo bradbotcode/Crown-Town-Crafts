@@ -13,6 +13,16 @@ router.use(function(req, res, next) {
 });
 
 //routes
+let renderObj;
+
+router.get("/beer",function(req, res) {
+    console.log(renderObj);
+    var newObj = {
+      Beer: renderObj
+    }
+    res.render("beer", newObj);
+})
+
 router.post("/api/newUser/:uid", function(req, res) {
   db.User.findAll({
     where: {
@@ -78,6 +88,7 @@ router.get("/api/type", function(req, res) {
     include: [{ model: db.Beer, where: { simple_style: type } }]
   }).then(function(typeResults) {
     res.json(typeResults);
+    renderObj = typeResults;
   });
 });
 

@@ -13,16 +13,6 @@ router.use(function(req, res, next) {
 });
 
 //routes
-router.get("/beer/:params", function(req, res) {
-  db.Brewery.all(function(data) {
-    var hbsObject = {
-      cats: data
-    };
-    console.log(hbsObject);
-    res.render("index", hbsObject);
-  });
-});
-
 router.post("/api/newUser/:uid", function(req, res) {
   db.User.findAll({
     where: {

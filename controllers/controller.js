@@ -5,7 +5,7 @@ var db = require("../models");
 //instance of router
 var router = express.Router();
 
-router.use(function(req, res, next) {
+router.use(function (req, res, next) {
   // log each request to the console
   console.log(req.method, req.url);
   // continue doing what we were doing and go to the route
@@ -13,22 +13,12 @@ router.use(function(req, res, next) {
 });
 
 //routes
-let renderObj;
-
-router.get("/beer",function(req, res) {
-    console.log(renderObj);
-    var newObj = {
-      Beer: renderObj
-    }
-    res.render("beer", newObj);
-})
-
-router.post("/api/newUser/:uid", function(req, res) {
+router.post("/api/newUser/:uid", function (req, res) {
   db.User.findAll({
     where: {
       uid: req.params.uid
     }
-  }).then(function(res) {
+  }).then(function (res) {
     if (res.length === 0) {
       db.User.create({
         uid: req.params.uid
@@ -39,7 +29,7 @@ router.post("/api/newUser/:uid", function(req, res) {
   });
 });
 
-router.post("/api/addbeer", function(req, res) {
+router.post("/api/addbeer", function (req, res) {
   console.log(req.body);
   var brewId = parseInt(req.body.brewery);
   db.Beer.create({
@@ -50,12 +40,12 @@ router.post("/api/addbeer", function(req, res) {
     simple_style: req.body.simple_style,
     hood: req.body.hood,
     BreweryId: req.body.brewery
-  }).then(function(results) {
+  }).then(function (results) {
     res.json(results);
   });
 });
 
-router.get("/api/brewery", function(req, res) {
+router.get("/api/brewery", function (req, res) {
   console.log(req.query);
   let brewID = req.query.brewery;
 
@@ -65,12 +55,12 @@ router.get("/api/brewery", function(req, res) {
       id: brewID
     },
     include: [db.Beer]
-  }).then(function(typeResults) {
+  }).then(function (typeResults) {
     res.json(typeResults);
   });
 });
 
-router.get("/api/type", function(req, res) {
+router.get("/api/type", function (req, res) {
   console.log(req.query);
   let type = req.query.type;
   let hood = req.query.hood;
@@ -86,13 +76,31 @@ router.get("/api/type", function(req, res) {
       ]
     },
     include: [{ model: db.Beer, where: { simple_style: type } }]
-  }).then(function(typeResults) {
+  }).then(function (typeResults) {
     res.json(typeResults);
-    renderObj = typeResults;
   });
 });
 
-router.get("/api/hood", function(req, res) {
+router.get("/api/all", function (req, res) {
+  console.log(req.query);
+
+  // sequelize logic
+  db.Brewery.findAll({
+    where: {
+      $or: [
+        { neighborhood: "West End" },
+        { neighborhood: "South End" },
+        { neighborhood: "Plaza Midwood" },
+        { neighborhood: "Noda" }
+      ]
+    },
+    include: [{ model: db.Beer }]
+  }).then(function (typeResults) {
+    res.json(typeResults);
+  });
+});
+
+router.get("/api/hood", function (req, res) {
   console.log(req.query);
   let hood = req.query.hood;
 
@@ -102,12 +110,12 @@ router.get("/api/hood", function(req, res) {
       neighborhood: hood
     },
     include: [db.Beer]
-  }).then(function(typeResults) {
+  }).then(function (typeResults) {
     res.json(typeResults);
   });
 });
 
-router.get("/api/typeAndbrewery", function(req, res) {
+router.get("/api/typeAndbrewery", function (req, res) {
   console.log(req.query);
   let type = req.query.type;
   let brewID = req.query.brewery;
@@ -118,12 +126,12 @@ router.get("/api/typeAndbrewery", function(req, res) {
       id: brewID
     },
     include: [{ model: db.Beer, where: { simple_style: type } }]
-  }).then(function(typeResults) {
+  }).then(function (typeResults) {
     res.json(typeResults);
   });
 });
 
-router.get("/api/typeAndhood", function(req, res) {
+router.get("/api/typeAndhood", function (req, res) {
   console.log(req.query);
   let type = req.query.type;
   let hood = req.query.hood;
@@ -134,12 +142,12 @@ router.get("/api/typeAndhood", function(req, res) {
       neighborhood: hood
     },
     include: [{ model: db.Beer, where: { simple_style: type } }]
-  }).then(function(typeResults) {
+  }).then(function (typeResults) {
     res.json(typeResults);
   });
 });
 
-router.get("/admin", function(req, res) {
+router.get("/admin", function (req, res) {
   res.sendFile(path.join(__dirname, "../public/admin.html"));
 });
 module.exports = router;

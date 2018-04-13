@@ -97,6 +97,8 @@ $(".login").click(function (event) {
         console.log("not valid user");
       } else {}
     });
+
+  $(".cd-user-modal").remove();
 });
 
 //sign-out click function

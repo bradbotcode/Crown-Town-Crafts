@@ -68,33 +68,26 @@ router.get("/api/type", function (req, res) {
   // sequelize logic
   db.Brewery.findAll({
     where: {
-      $or: [
-        { neighborhood: "West End" },
-        { neighborhood: "South End" },
-        { neighborhood: "Plaza Midwood" },
-        { neighborhood: "Noda" }
+      $or: [{
+          neighborhood: "West End"
+        },
+        {
+          neighborhood: "South End"
+        },
+        {
+          neighborhood: "Plaza Midwood"
+        },
+        {
+          neighborhood: "Noda"
+        }
       ]
     },
-    include: [{ model: db.Beer, where: { simple_style: type } }]
-  }).then(function (typeResults) {
-    res.json(typeResults);
-  });
-});
-
-router.get("/api/all", function (req, res) {
-  console.log(req.query);
-
-  // sequelize logic
-  db.Brewery.findAll({
-    where: {
-      $or: [
-        { neighborhood: "West End" },
-        { neighborhood: "South End" },
-        { neighborhood: "Plaza Midwood" },
-        { neighborhood: "Noda" }
-      ]
-    },
-    include: [{ model: db.Beer }]
+    include: [{
+      model: db.Beer,
+      where: {
+        simple_style: type
+      }
+    }]
   }).then(function (typeResults) {
     res.json(typeResults);
   });
@@ -125,7 +118,12 @@ router.get("/api/typeAndbrewery", function (req, res) {
     where: {
       id: brewID
     },
-    include: [{ model: db.Beer, where: { simple_style: type } }]
+    include: [{
+      model: db.Beer,
+      where: {
+        simple_style: type
+      }
+    }]
   }).then(function (typeResults) {
     res.json(typeResults);
   });
@@ -141,7 +139,40 @@ router.get("/api/typeAndhood", function (req, res) {
     where: {
       neighborhood: hood
     },
-    include: [{ model: db.Beer, where: { simple_style: type } }]
+    include: [{
+      model: db.Beer,
+      where: {
+        simple_style: type
+      }
+    }]
+  }).then(function (typeResults) {
+    res.json(typeResults);
+  });
+});
+
+router.get("/api/all", function (req, res) {
+  console.log(req.query);
+
+  // sequelize logic
+  db.Brewery.findAll({
+    where: {
+      $or: [{
+          neighborhood: "West End"
+        },
+        {
+          neighborhood: "South End"
+        },
+        {
+          neighborhood: "Plaza Midwood"
+        },
+        {
+          neighborhood: "Noda"
+        }
+      ]
+    },
+    include: [{
+      model: db.Beer
+    }]
   }).then(function (typeResults) {
     res.json(typeResults);
   });

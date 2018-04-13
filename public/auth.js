@@ -104,5 +104,6 @@ $(".signOut").click(function (event) {
   event.preventDefault();
   console.log("hello");
   firebase.auth().signOut();
+  window.location.href = "index.html"
   //what to hide or show
 });

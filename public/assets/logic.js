@@ -30,6 +30,7 @@ $(".indexSubmit").on("click", function (event) {
       replaceBeers(data);
     });
   };
+  $(".indexSelects").val("1=1");
 });
 
 

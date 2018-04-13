@@ -1,6 +1,15 @@
 <h1>Crown Town Crafts</h1>
 <h3></h3>
-
+<table>
+    {{#each Beer}}
+    <tr>
+        <td>
+            {{beer_name}}
+        </td>
+    </tr>
+    {{/each}}
+</table>
+<!--
 {{#each Brewery}}
 <ul>
     <li>{{brewery_name}}</li>
@@ -20,6 +29,8 @@
 {{else}}
 <p class="empty">No content</p>
 {{/each}}
+
+-->
 
 
 <div class="wrapper">

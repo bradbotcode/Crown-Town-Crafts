@@ -1,41 +1,40 @@
 jQuery.ajaxSettings.traditional = true;
-$(".indexSubmit").on("click", function (event) {
+$(".indexSubmit").on("click", function(event) {
   var type = $("#type").val();
   var hood = $("#neighborhood").val();
   console.log(hood);
   var brewery = $("#brewery").val();
   var query = "?type=" + type + "&brewery=" + brewery + "&hood=" + hood;
-  
+
   console.log(query);
 
   if (hood === null && type !== null && brewery !== null) {
-    $.get("/api/typeAndbrewery/" + query, function (data) {
+    $.get("/api/typeAndbrewery/" + query, function(data) {
       replaceBeers(data);
     });
   } else if (hood === null && brewery === null) {
-    $.get("/api/type" + query, function (data) {
+    $.get("/api/type" + query, function(data) {
       replaceBeers(data);
     });
   } else if (type === null && brewery === null) {
-    $.get("/api/hood/" + query, function (data) {
+    $.get("/api/hood/" + query, function(data) {
       replaceBeers(data);
     });
   } else if (type === null && hood === null) {
-    $.get("/api/brewery" + query, function (data) {
+    $.get("/api/brewery" + query, function(data) {
       replaceBeers(data);
     });
   } else if (brewery === null || (hood && type && brewery)) {
     query = "?type=" + type + "&brewery=null" + "&hood=" + hood;
-    $.get("/api/typeAndhood/" + query, function (data) {
+    $.get("/api/typeAndhood/" + query, function(data) {
       replaceBeers(data);
     });
-  };
+  }
   $(".indexSelects").val("1=1");
 });
 
-
-$(".addBeer").on("click", function (event) {
-  $.post("/api/addbeer", $(".adminForm").serialize(), function (data) {
+$(".addBeer").on("click", function(event) {
+  $.post("/api/addbeer", $(".adminForm").serialize(), function(data) {
     console.log(data);
   });
 });
@@ -44,42 +43,92 @@ function getBeers() {
   $.ajax({
     url: "/api/all",
     method: "GET",
-    success: function (response) {
+    success: function(response) {
       for (var i = 0; i < response.length; i++) {
-        $(".resultss").append("<h4>" + response[i].brewery_name + "</h4><p><h5>" + "Founded: " + response[i].year_est + "</h5></p>" + "<div class='wrapper'><div class='left'><span class='brew'>" + "Neighborhood" + "</span><span>" + response[i].neighborhood + "</span></div><div class='middle'><span class='brew'>" + "Address" + "</span><span>" + response[i].street + "</span></div><div class='right'><span class='brew'>" + "Website" + "</span><span>" + response[i].website + "</span></div><div class='full'><span class='brew'>" + "Description" + "</span><span>" + response[i].desc + "</span></div></div>");
+        $(".resultss").append(
+          "<h4>" +
+            response[i].brewery_name +
+            "</h4><p><h5>" +
+            "Founded: " +
+            response[i].year_est +
+            "</h5></p>" +
+            "<div class='wrapper'><div class='left'><span class='brew'>" +
+            "Neighborhood" +
+            "</span><span>" +
+            response[i].neighborhood +
+            "</span></div><div class='middle'><span class='brew'>" +
+            "Address" +
+            "</span><span>" +
+            response[i].street +
+            "</span></div><div class='right'><span class='brew'>" +
+            "Website" +
+            "</span><span>" +
+            response[i].website +
+            "</span></div><div class='full'><span class='brew'>" +
+            "Description" +
+            "</span><span>" +
+            response[i].desc +
+            "</span></div></div>"
+        );
         for (var j = 0; j < response[i].Beers.length; j++) {
-          $(".resultss").append("<br>" + response[i].Beers[j].beer_name + "<br>")
+          $(".resultss").append(
+            "<br>" + response[i].Beers[j].beer_name + "<br>"
+          );
         }
       }
     }
-  })
+  });
 }
 getBeers();
 
 function replaceBeers(data) {
   $(".resultss").empty();
   for (var i = 0; i < data.length; i++) {
-    $(".resultss").append("<h4>" + data[i].brewery_name + "</h4><p><h5>" + "Founded: " + data[i].year_est + "</h5></p>" + "<div class='wrapper'><div class='left'><span class='brew'>" + "Neighborhood" + "</span><span>" + data[i].neighborhood + "</span></div><div class='middle'><span class='brew'>" + "Address" + "</span><span>" + data[i].street + "</span></div><div class='right'><span class='brew'>" + "Website" + "</span><span>" + data[i].website + "</span></div><div class='full'><span class='brew'>" + "Description" + "</span><span>" + data[i].desc + "</span></div></div>");
+    $(".resultss").append(
+      "<h4>" +
+        data[i].brewery_name +
+        "</h4><p><h5>" +
+        "Founded: " +
+        data[i].year_est +
+        "</h5></p>" +
+        "<div class='wrapper'><div class='left'><span class='brew'>" +
+        "Neighborhood" +
+        "</span><span>" +
+        data[i].neighborhood +
+        "</span></div><div class='middle'><span class='brew'>" +
+        "Address" +
+        "</span><span>" +
+        data[i].street +
+        "</span></div><div class='right'><span class='brew'>" +
+        "Website" +
+        "</span><span>" +
+        data[i].website +
+        "</span></div><div class='full'><span class='brew'>" +
+        "Description" +
+        "</span><span>" +
+        data[i].desc +
+        "</span></div></div>"
+    );
     for (var j = 0; j < data[i].Beers.length; j++) {
-      $(".resultss").append("<br>" + data[i].Beers[j].beer_name + "<br>")
+      $(".resultss").append("<br>" + data[i].Beers[j].beer_name + "<br>");
     }
   }
 }
 
-jQuery(document).ready(function ($) {
+jQuery(document).ready(function($) {
   var $form_modal = $(".cd-user-modal"),
     $form_login = $form_modal.find("#cd-login"),
     $form_signup = $form_modal.find("#cd-signup"),
     $form_forgot_password = $form_modal.find("#cd-reset-password"),
     $form_modal_tab = $(".cd-switcher"),
     $tab_login = $form_modal_tab
-    .children("li")
-    .eq(0)
-    .children("a"),
+      .children("li")
+      .eq(0)
+      .children("a"),
     $tab_signup = $form_modal_tab
-    .children("li")
-    .eq(1)
-    .children("a"),
+      .children("li")
+      .eq(1)
+      .children("a"),
     $forgot_password_link = $form_login.find(".cd-form-bottom-message a"),
     $back_to_login_link = $form_forgot_password.find(
       ".cd-form-bottom-message a"
@@ -87,9 +136,8 @@ jQuery(document).ready(function ($) {
     $main_nav = $(".main-nav");
   $modalOpen = $(".modalClick");
 
-
   //open modal
-  $modalOpen.on("click", function (event) {
+  $modalOpen.on("click", function(event) {
     if ($(event.target).is($main_nav)) {
       // on mobile open the submenu
       $(main_nav)
@@ -106,7 +154,7 @@ jQuery(document).ready(function ($) {
   });
 
   //close modal
-  $(".cd-user-modal").on("click", function (event) {
+  $(".cd-user-modal").on("click", function(event) {
     if (
       $(event.target).is($form_modal) ||
       $(event.target).is(".cd-close-form")
@@ -115,39 +163,39 @@ jQuery(document).ready(function ($) {
     }
   });
   //close modal when clicking the esc keyboard button
-  $(document).keyup(function (event) {
+  $(document).keyup(function(event) {
     if (event.which == "27") {
       $form_modal.removeClass("is-visible");
     }
   });
 
   //switch from a tab to another
-  $form_modal_tab.on("click", function (event) {
+  $form_modal_tab.on("click", function(event) {
     event.preventDefault();
     $(event.target).is($tab_login) ? login_selected() : signup_selected();
   });
 
   //hide or show password
-  $(".hide-password").on("click", function () {
+  $(".hide-password").on("click", function() {
     var $this = $(this),
       $password_field = $this.prev("input");
 
-    "password" == $password_field.attr("type") ?
-      $password_field.attr("type", "text") :
-      $password_field.attr("type", "password");
+    "password" == $password_field.attr("type")
+      ? $password_field.attr("type", "text")
+      : $password_field.attr("type", "password");
     "Hide" == $this.text() ? $this.text("Show") : $this.text("Hide");
     //focus and move cursor to the end of input field
     $password_field.putCursorAtEnd();
   });
 
   //show forgot-password form
-  $forgot_password_link.on("click", function (event) {
+  $forgot_password_link.on("click", function(event) {
     event.preventDefault();
     forgot_password_selected();
   });
 
   //back to login from the forgot-password form
-  $back_to_login_link.on("click", function (event) {
+  $back_to_login_link.on("click", function(event) {
     event.preventDefault();
     login_selected();
   });
@@ -178,13 +226,13 @@ jQuery(document).ready(function ($) {
   //credits http://www.hagenburger.net/BLOG/HTML5-Input-Placeholder-Fix-With-jQuery.html
   if (!Modernizr.input.placeholder) {
     $("[placeholder]")
-      .focus(function () {
+      .focus(function() {
         var input = $(this);
         if (input.val() == input.attr("placeholder")) {
           input.val("");
         }
       })
-      .blur(function () {
+      .blur(function() {
         var input = $(this);
         if (input.val() == "" || input.val() == input.attr("placeholder")) {
           input.val(input.attr("placeholder"));
@@ -193,10 +241,10 @@ jQuery(document).ready(function ($) {
       .blur();
     $("[placeholder]")
       .parents("form")
-      .submit(function () {
+      .submit(function() {
         $(this)
           .find("[placeholder]")
-          .each(function () {
+          .each(function() {
             var input = $(this);
             if (input.val() == input.attr("placeholder")) {
               input.val("");
@@ -207,8 +255,8 @@ jQuery(document).ready(function ($) {
 });
 
 //credits https://css-tricks.com/snippets/jquery/move-cursor-to-end-of-textarea-or-input/
-jQuery.fn.putCursorAtEnd = function () {
-  return this.each(function () {
+jQuery.fn.putCursorAtEnd = function() {
+  return this.each(function() {
     // If this function exists...
     if (this.setSelectionRange) {
       // ... then use it (Doesn't work in IE)
@@ -223,62 +271,116 @@ jQuery.fn.putCursorAtEnd = function () {
   });
 };
 
-function getBeers (){
+function getBeers() {
   $.ajax({
     url: "/api/all",
     method: "GET",
-    success: function (response) {
-      for (var i = 0; i < response.length; i ++) {
+    success: function(response) {
+      for (var i = 0; i < response.length; i++) {
         $(".results").append(
-          "<h4>" + response[i].brewery_name + "</h4>" +
-          "<p><h5>" + "Founded: " + response[i].year_est + "</h5></p>" + 
-          "<div class='wrapper'><div class='left'><span class='brew'>" + "Neighborhood" + "</span><span>" + response[i].neighborhood + 
-          "</span></div><div class='middle'><span class='brew'>" + "Address" + "</span><span>" + response[i].street + 
-          "</span></div><div class='right'><span class='brew'>" + "Website" + "</span><span>" + response[i].website + 
-          "</span></div><div class='full'><span class='brew'>" + "Description" + "</span><span>" + response[i].desc + 
-          "</span></div></div><div class='full brewCrafts'><h5>Craft Beers by " + response[i].brewery_name + "</h5></div>"
+          "<h4>" +
+            response[i].brewery_name +
+            "</h4>" +
+            "<p><h5>" +
+            "Founded: " +
+            response[i].year_est +
+            "</h5></p>" +
+            "<div class='wrapper'><div class='left'><span class='brew'>" +
+            "Neighborhood" +
+            "</span><span>" +
+            response[i].neighborhood +
+            "</span></div><div class='middle'><span class='brew'>" +
+            "Address" +
+            "</span><span>" +
+            response[i].street +
+            "</span></div><div class='right'><span class='brew'>" +
+            "Website" +
+            "</span><span>" +
+            response[i].website +
+            "</span></div><div class='full'><span class='brew'>" +
+            "Description" +
+            "</span><span>" +
+            response[i].desc +
+            "</span></div></div><div class='full brewCrafts'><h5>Craft Beers by " +
+            response[i].brewery_name +
+            "</h5></div>"
         );
         for (var j = 0; j < response[i].Beers.length; j++) {
           $(".results").append(
             '<article class="beerContainer">' +
-                '<div class="beerName">' + response[i].Beers[j].beer_name + '</div>' +
-                '<div class="beerInfo">' +
-                    '<div class="beerType">Beer Type: ' + response[i].Beers[j].style + '</div>' +
-                    '<div class="abv">ABV: ' + response[i].Beers[j].abv +'</div>' +
-                    '<div class="ibu"> IBU: ' + response[i].Beers[j].ibu +'</div>' +
-                '</div>' +
-              '</article>'
+              '<div class="beerName">' +
+              response[i].Beers[j].beer_name +
+              "</div>" +
+              '<div class="beerInfo">' +
+              '<div class="beerType">Beer Type: ' +
+              response[i].Beers[j].style +
+              "</div>" +
+              '<div class="abv">ABV: ' +
+              response[i].Beers[j].abv +
+              "</div>" +
+              '<div class="ibu"> IBU: ' +
+              response[i].Beers[j].ibu +
+              "</div>" +
+              "</div>" +
+              "</article>"
           );
         }
       }
     }
-})
+  });
 }
 getBeers();
 
-function replaceBeers(data){
+function replaceBeers(data) {
   $(".results").empty();
-        for (var i = 0; i < data.length; i ++) {
-          $(".resultss").append(
-            "<h4>" + data[i].brewery_name + "</h4>" +
-            "<p><h5>" + "Founded: " + data[i].year_est + "</h5></p>" + 
-            "<div class='wrapper'><div class='left'><span class='brew'>" + "Neighborhood" + "</span><span>" + data[i].neighborhood + 
-            "</span></div><div class='middle'><span class='brew'>" + "Address" + "</span><span>" + data[i].street + 
-            "</span></div><div class='right'><span class='brew'>" + "Website" + "</span><span>" + data[i].website + 
-            "</span></div><div class='full'><span class='brew'>" + "Description" + "</span><span>" + data[i].desc + 
-            "</span></div></div><div class='full brewCrafts'><h5>Craft Beers by " + data[i].brewery_name + "</h5></div>"
-          );
-          for (var j = 0; j < data[i].Beers.length; j++) {
-            $(".results").append(
-              '<article class="beerContainer">' +
-                '<div class="beerName">' + data[i].Beers[j].beer_name + '</div>' +
-                '<div class="beerInfo">' +
-                    '<div class="beerType">Beer Type: ' + data[i].Beers[j].style + '</div>' +
-                    '<div class="abv">ABV: ' + data[i].Beers[j].abv +'</div>' +
-                    '<div class="ibu"> IBU: ' + data[i].Beers[j].ibu +'</div>' +
-                '</div>' +
-              '</article>'
-            );
-          }
-        }
+  for (var i = 0; i < data.length; i++) {
+    $(".results").append(
+      "<h4>" +
+        data[i].brewery_name +
+        "</h4>" +
+        "<p><h5>" +
+        "Founded: " +
+        data[i].year_est +
+        "</h5></p>" +
+        "<div class='wrapper'><div class='left'><span class='brew'>" +
+        "Neighborhood" +
+        "</span><span>" +
+        data[i].neighborhood +
+        "</span></div><div class='middle'><span class='brew'>" +
+        "Address" +
+        "</span><span>" +
+        data[i].street +
+        "</span></div><div class='right'><span class='brew'>" +
+        "Website" +
+        "</span><span>" +
+        data[i].website +
+        "</span></div><div class='full'><span class='brew'>" +
+        "Description" +
+        "</span><span>" +
+        data[i].desc +
+        "</span></div></div><div class='full brewCrafts'><h5>Craft Beers by " +
+        data[i].brewery_name +
+        "</h5></div>"
+    );
+    for (var j = 0; j < data[i].Beers.length; j++) {
+      $(".results").append(
+        '<article class="beerContainer">' +
+          '<div class="beerName">' +
+          data[i].Beers[j].beer_name +
+          "</div>" +
+          '<div class="beerInfo">' +
+          '<div class="beerType">Beer Type: ' +
+          data[i].Beers[j].style +
+          "</div>" +
+          '<div class="abv">ABV: ' +
+          data[i].Beers[j].abv +
+          "</div>" +
+          '<div class="ibu"> IBU: ' +
+          data[i].Beers[j].ibu +
+          "</div>" +
+          "</div>" +
+          "</article>"
+      );
+    }
+  }
 }

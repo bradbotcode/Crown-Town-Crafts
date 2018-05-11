@@ -110,7 +110,7 @@ function replaceBeers(data) {
         "</span></div></div>"
     );
     for (var j = 0; j < data[i].Beers.length; j++) {
-      $(".resultss").append("<br>" + data[i].Beers[j].beer_name + "<br>");
+      $(".results").append("<br>" + data[i].Beers[j].beer_name + "<br>");
     }
   }
 }

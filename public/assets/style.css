@@ -277,11 +277,20 @@ textarea::-ms-clear {
     padding-top: 10px;
 }
 
+.brew {
+  font-family:"Poiret One", sans-serif;
+  color: #c0b283;
+  font-size: .9rem;
+  display: block;
+
+}
+
 .fifty {
   min-width: 50%;
   max-width: 50%; 
   width: 50%;
 }
+
 
 .results {
   display: grid;
@@ -325,7 +334,6 @@ textarea::-ms-clear {
       grid-template-columns: repeat(3, 1fr);
   }
 }
-
 
 /* Admin Page */
 

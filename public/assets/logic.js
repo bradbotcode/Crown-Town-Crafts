@@ -259,7 +259,7 @@ getBeers();
 function replaceBeers(data){
   $(".results").empty();
         for (var i = 0; i < data.length; i ++) {
-          $(".resultss").append(
+          $(".results").append(
             "<h4>" + data[i].brewery_name + "</h4>" +
             "<p><h5>" + "Founded: " + data[i].year_est + "</h5></p>" + 
             "<div class='wrapper'><div class='left'><span class='brew'>" + "Neighborhood" + "</span><span>" + data[i].neighborhood + 

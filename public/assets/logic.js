@@ -229,9 +229,26 @@ function getBeers (){
     method: "GET",
     success: function (response) {
       for (var i = 0; i < response.length; i ++) {
-        $(".resultss").append("<h4>" + response[i].brewery_name + "</h4><p><h5>" + "Founded: " + response[i].year_est + "</h5></p>" + "<div class='wrapper'><div class='left'><span class='brew'>" + "Neighborhood" + "</span><span>" + response[i].neighborhood + "</span></div><div class='middle'><span class='brew'>" + "Address" + "</span><span>" + response[i].street + "</span></div><div class='right'><span class='brew'>" + "Website" + "</span><span>" + response[i].website + "</span></div><div class='full'><span class='brew'>" + "Description" + "</span><span>" + response[i].desc + "</span></div></div><div class='full brewCrafts'><h5>Craft Beers by " + response[i].brewery_name + "</h5></div>");
+        $(".results").append(
+          "<h4>" + response[i].brewery_name + "</h4>" +
+          "<p><h5>" + "Founded: " + response[i].year_est + "</h5></p>" + 
+          "<div class='wrapper'><div class='left'><span class='brew'>" + "Neighborhood" + "</span><span>" + response[i].neighborhood + 
+          "</span></div><div class='middle'><span class='brew'>" + "Address" + "</span><span>" + response[i].street + 
+          "</span></div><div class='right'><span class='brew'>" + "Website" + "</span><span>" + response[i].website + 
+          "</span></div><div class='full'><span class='brew'>" + "Description" + "</span><span>" + response[i].desc + 
+          "</span></div></div><div class='full brewCrafts'><h5>Craft Beers by " + response[i].brewery_name + "</h5></div>"
+        );
         for (var j = 0; j < response[i].Beers.length; j++) {
-          $(".resultss").append("<div class='full margin15'><span class='beerName'>"+ response[i].Beers[j].beer_name + "</span><span class='brew'>Beer Type: " + response[i].Beers[j].style + "</span><span class='brew'>ABV: " + response[i].Beers[j].abv + "</span><span class='brew'>IBU: " + response[i].Beers[j].ibu + "</span></div>")
+          $(".results").append(
+            '<article class="beerContainer">' +
+                '<div class="beerName">' + response[i].Beers[j].beer_name + '</div>' +
+                '<div class="beerInfo">' +
+                    '<div class="beerType">Beer Type: ' + response[i].Beers[j].style + '</div>' +
+                    '<div class="abv">ABV: ' + response[i].Beers[j].abv +'</div>' +
+                    '<div class="ibu"> IBU: ' + response[i].Beers[j].ibu +'</div>' +
+                '</div>' +
+              '</article>'
+          );
         }
       }
     }
@@ -240,11 +257,28 @@ function getBeers (){
 getBeers();
 
 function replaceBeers(data){
-  $(".resultss").empty();
+  $(".results").empty();
         for (var i = 0; i < data.length; i ++) {
-          $(".resultss").append("<h4>" + data[i].brewery_name + "</h4><p><h5>" + "Founded: " + data[i].year_est + "</h5></p>" + "<div class='wrapper'><div class='left'><span class='brew'>" + "Neighborhood" + "</span><span>" + data[i].neighborhood + "</span></div><div class='middle'><span class='brew'>" + "Address" + "</span><span>" + data[i].street + "</span></div><div class='right'><span class='brew'>" + "Website" + "</span><span>" + data[i].website + "</span></div><div class='full'><span class='brew'>" + "Description" + "</span><span>" + data[i].desc + "</span></div></div><div class='full brewCrafts'><h5>Craft Beers by " + data[i].brewery_name + "</h5></div>");
+          $(".resultss").append(
+            "<h4>" + data[i].brewery_name + "</h4>" +
+            "<p><h5>" + "Founded: " + data[i].year_est + "</h5></p>" + 
+            "<div class='wrapper'><div class='left'><span class='brew'>" + "Neighborhood" + "</span><span>" + data[i].neighborhood + 
+            "</span></div><div class='middle'><span class='brew'>" + "Address" + "</span><span>" + data[i].street + 
+            "</span></div><div class='right'><span class='brew'>" + "Website" + "</span><span>" + data[i].website + 
+            "</span></div><div class='full'><span class='brew'>" + "Description" + "</span><span>" + data[i].desc + 
+            "</span></div></div><div class='full brewCrafts'><h5>Craft Beers by " + data[i].brewery_name + "</h5></div>"
+          );
           for (var j = 0; j < data[i].Beers.length; j++) {
-            $(".resultss").append("<div class='full margin15'><span class='beerName'>"+ data[i].Beers[j].beer_name + "</span><span class='brew'>Beer Type: " + data[i].Beers[j].style + "</span><span class='brew'>ABV: " + data[i].Beers[j].abv + "</span><span class='brew'>IBU: " + data[i].Beers[j].ibu + "</span></div>")
+            $(".results").append(
+              '<article class="beerContainer">' +
+                '<div class="beerName">' + data[i].Beers[j].beer_name + '</div>' +
+                '<div class="beerInfo">' +
+                    '<div class="beerType">Beer Type: ' + data[i].Beers[j].style + '</div>' +
+                    '<div class="abv">ABV: ' + data[i].Beers[j].abv +'</div>' +
+                    '<div class="ibu"> IBU: ' + data[i].Beers[j].ibu +'</div>' +
+                '</div>' +
+              '</article>'
+            );
           }
         }
 }

@@ -277,23 +277,55 @@ textarea::-ms-clear {
     padding-top: 10px;
 }
 
-.brew {
-  font-family:"Poiret One", sans-serif;
-  color: #c0b283;
-  font-size: .9rem;
-  display: block;
-
-}
-
 .fifty {
   min-width: 50%;
   max-width: 50%; 
   width: 50%;
 }
 
-.beerName {
-  padding-top: 10px;
+.results {
+  display: grid;
+  grid-gap: .8rem;
+  margin-top: 10px;
 }
+
+.beerContainer {
+  -webkit-box-shadow: 7px 10px 22px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 7px 10px 22px -6px rgba(0,0,0,0.75);
+  box-shadow: 7px 10px 22px -6px rgba(0,0,0,0.75);
+  font-family:"Poiret One", sans-serif;
+}
+
+.beerContainer:hover {
+  -webkit-box-shadow: 7px 10px 22px -6px rgba(0,0,0,0.90);
+  -moz-box-shadow: 7px 10px 22px -6px rgba(0,0,0,0.90);
+  box-shadow: 7px 10px 22px -6px rgba(0,0,0,0.90);
+  font-family:"Poiret One", sans-serif;
+}
+
+.beerName {
+  display: block;
+  background-color: #c0b283;
+  color: #444;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  padding: 5px 10px;
+}
+
+.beerInfo {
+  display: block;
+  background-color: #444;
+  color: #ddd;
+  padding: 10px;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 1000px) {
+  .wrapper {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 
 /* Admin Page */
 

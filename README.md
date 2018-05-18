@@ -1,3 +1,4 @@
 # Crown-Town-Crafts
 
-Local beer app
+
+View it live: https://crown-town-crafts.herokuapp.com/

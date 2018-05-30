@@ -271,7 +271,7 @@ textarea::-ms-clear {
     margin: 10px 0px;
 }
 
-.brewCrafts {
+.borderTop {
     margin-top: 10px;
     border-top: 1px solid #c0b283;
     padding-top: 10px;
@@ -293,12 +293,22 @@ textarea::-ms-clear {
 
 
 .results {
-  display: grid;
-  grid-gap: .8rem;
   margin-top: 10px;
 }
 
+.brewWeb {
+  color: #918765;
+}
+
+.brewCrafts {
+  display: grid;
+  grid-gap: 1rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 .beerContainer {
+  display: grid;
   -webkit-box-shadow: 7px 10px 22px -6px rgba(0,0,0,0.75);
   -moz-box-shadow: 7px 10px 22px -6px rgba(0,0,0,0.75);
   box-shadow: 7px 10px 22px -6px rgba(0,0,0,0.75);
@@ -330,7 +340,7 @@ textarea::-ms-clear {
 }
 
 @media (min-width: 1000px) {
-  .wrapper {
+  .brewCrafts {
       grid-template-columns: repeat(3, 1fr);
   }
 }

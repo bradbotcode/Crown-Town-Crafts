@@ -220,17 +220,19 @@ function getBeers() {
             "</span></div><div class='right'><span class='brew'>" +
             "Website" +
             "</span><span>" +
-            response[i].website +
+            "<a class='brewWeb' href='"+ response[i].website + "'>" + response[i].website + "</a>" +
             "</span></div><div class='full'><span class='brew'>" +
             "Description" +
             "</span><span>" +
             response[i].desc +
-            "</span></div></div><div class='full brewCrafts'><h5>Craft Beers by " +
+            "</span></div></div><div class='borderTop'><h5>Craft Beers by " +
             response[i].brewery_name +
-            "</h5></div>"
+            "</h5>" +
+            "<div class='brewCrafts brewery" + i + "'></div>" +
+            "</div>"
         );
         for (var j = 0; j < response[i].Beers.length; j++) {
-          $(".results").append(
+          $(".brewery" + i).append(
             '<article class="beerContainer">' +
               '<div class="beerName">' +
               response[i].Beers[j].beer_name +
@@ -277,17 +279,19 @@ function replaceBeers(data) {
         "</span></div><div class='right'><span class='brew'>" +
         "Website" +
         "</span><span>" +
-        data[i].website +
+        "<a class='brewWeb' href='"+ data[i].website + "'>" + data[i].website + "</a>" +
         "</span></div><div class='full'><span class='brew'>" +
         "Description" +
         "</span><span>" +
         data[i].desc +
-        "</span></div></div><div class='full brewCrafts'><h5>Craft Beers by " +
+        "</span></div></div><div class='borderTop'><h5>Craft Beers by " +
         data[i].brewery_name +
-        "</h5></div>"
+        "</h5>" +
+        "<div class='brewCrafts brewery" + i + "'></div>" +
+        "</div>"
     );
     for (var j = 0; j < data[i].Beers.length; j++) {
-      $(".results").append(
+      $(".brewery" + i).append(
         '<article class="beerContainer">' +
           '<div class="beerName">' +
           data[i].Beers[j].beer_name +
